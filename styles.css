@@ -49,3 +49,6 @@ a {
 a:hover {
     background-color: #0050a6;
 }
+.highlight {
+    background-color: yellow;
+}
