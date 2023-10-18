@@ -12,10 +12,11 @@ img {
 
 input{
     background-color: rgb(255, 255, 255);
-    color: #fff;
+    color: rgb(0, 0, 0);
     text-align: center;
     padding: 10px;
     margin-bottom: 20px;
+    border-radius: 25px;
     
 }
 
@@ -59,4 +60,7 @@ a {
 a:hover {
     background-color: #0050a6;
 }
+footer {
 
+    color: rgb(70, 70, 66);
+}
