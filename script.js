@@ -17,3 +17,20 @@ function filterDocuments() {
         }
     }
 }
+document.addEventListener("DOMContentLoaded", function () {
+    const documentLinks = document.querySelectorAll("#document-list a");
+    const descriptionBox = document.getElementById("description-box");
+
+    documentLinks.forEach((link) => {
+        link.addEventListener("mouseover", (event) => {
+            const description = event.target.getAttribute("data-description");
+            descriptionBox.innerHTML = description;
+            descriptionBox.classList.remove("hidden");
+        });
+
+        link.addEventListener("mouseout", () => {
+            descriptionBox.innerHTML = "";
+            descriptionBox.classList.add("hidden");
+        });
+    });
+});
