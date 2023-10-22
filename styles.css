@@ -67,6 +67,7 @@ input {background-color: rgb(255, 255, 255);
     padding: 0px;
 }
 
+#menua:hover {background-color: #161616;}/*en esta parte se modifica el color del menu cuando el cursor pasa por encima*/
 #menua {display: block;
     background-color: #55676e;
     color: #fff;
