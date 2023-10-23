@@ -72,6 +72,7 @@ input {background-color: rgb(255, 255, 255);
     background-color: #55676e;
     color: #fff;
     text-decoration: none;
+    font-weight: 100;
     padding: 10px;
     border-radius: 5px;}
 /* Evitar que el contenido principal se solape con la barra de navegación */
@@ -93,16 +94,24 @@ ul  {list-style:none;
     padding: 0;}
 
 li  {margin-bottom: 10px;
-    width: 50%}
-    
+        width: 50%}
+    /* Estilo para el icono de PDF */
+ul li img {
+    width: 30px; /* Tamaño del icono */
+    margin-right: 10px; /* Espacio entre el icono y el texto */
+  }
+  
 a   {display: block;
-    background-color: #0073e6;
-    color: #fff;
+    background-color: #b0b0b1;
+    color: rgb(44, 44, 44);
     text-decoration: none;
+    font-weight: 550;
     padding: 10px;
+    display: flex;
+    align-items: center;
     border-radius: 5px;}
 
-a:hover {background-color: #0050a6;}
+a:hover {background-color: #868686;}
 
 footer {color: rgb(70, 70, 66);}
 
@@ -120,6 +129,7 @@ footer {color: rgb(70, 70, 66);}
     max-width: 200px;}
 
 .hidden {display: none;}
+
 
 
 
