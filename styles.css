@@ -103,9 +103,8 @@ ul li img {
   
 a   {display: block;
     background-color: rgb(204, 204, 204);
-    color: rgb(44, 44, 44);
+    color: rgb(0, 0, 0);
     text-decoration: none;
-    font-weight: 550;
     padding: 10px;
     display: flex;
     align-items: center;
