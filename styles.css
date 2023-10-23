@@ -102,7 +102,7 @@ ul li img {
   }
   
 a   {display: block;
-    background-color: #b0b0b1;
+    background-color: rgb(204, 204, 204);
     color: rgb(44, 44, 44);
     text-decoration: none;
     font-weight: 550;
