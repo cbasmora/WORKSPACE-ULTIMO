@@ -129,8 +129,31 @@ footer {color: rgb(70, 70, 66);}
 
 .hidden {display: none;}
 
+table {
+    border-collapse: collapse;
+    width: 50%;
+    align-items: center;
+}
 
-
+tr {
+    margin-bottom: 80px;
+}
+td {
+    
+    border-radius: 5px;
+    padding: 10px;
+    background-color: rgb(204, 204, 204);
+    margin-bottom: 50px;
+}
+.column1 {
+    margin-bottom: 80px;
+    width: 70%; /* Porcentaje del ancho de la tabla */
+}
+.column2 {
+    margin-bottom: 80px;
+    align-items: center;
+    width: 20%; /* Porcentaje del ancho de la tabla */
+}
 
 
 
