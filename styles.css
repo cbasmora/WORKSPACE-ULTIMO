@@ -132,7 +132,7 @@ footer {color: rgb(70, 70, 66);}
 table {
     margin-top: 20px;
     border-radius: 1px;
-    width: 30%;
+    width: 50%;
 
 }
 
@@ -155,7 +155,7 @@ td {
 .column2 {
     text-align: center;
     margin-bottom: 80px;
-    width: 20%; /* Porcentaje del ancho de la tabla */
+    width: 30%; /* Porcentaje del ancho de la tabla */
 }
 
 iframe {
@@ -181,7 +181,6 @@ iframe {
 
     display: block;
     margin: 0 auto; /* Centrar horizontalmente */
-    vertical-align: middle; /* Centrar verticalmente */
 }
 
 /* Establece un fondo o un borde en las celdas para resaltarlas */
@@ -189,6 +188,3 @@ iframe {
     background-color: rgb(204, 204, 204); /* Cambia el color de fondo si lo deseas */
     padding: 10px; /* Ajusta el espaciado interno según tus necesidades */
 }
-
-
-
