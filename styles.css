@@ -130,31 +130,65 @@ footer {color: rgb(70, 70, 66);}
 .hidden {display: none;}
 
 table {
-    border-collapse: collapse;
-    width: 50%;
-    align-items: center;
+    margin-top: 20px;
+    border-radius: 1px;
+    width: 30%;
+
 }
 
 tr {
     margin-bottom: 80px;
-}
+    }
 td {
     
     border-radius: 5px;
     padding: 10px;
     background-color: rgb(204, 204, 204);
-    margin-bottom: 50px;
+    margin-bottom: 20px;
+    
 }
 .column1 {
-    margin-bottom: 80px;
+    margin-bottom: 20px;
     width: 70%; /* Porcentaje del ancho de la tabla */
+    
 }
 .column2 {
+    text-align: center;
     margin-bottom: 80px;
-    align-items: center;
     width: 20%; /* Porcentaje del ancho de la tabla */
 }
 
+iframe {
+    
+    width: 270px;  /* Establecer el ancho al 30% del contenedor padre */
+    height: 150px; /* Establecer el alto al 20% del contenedor padre */
+}
+
+.video-container {
+    margin: 10px; /* Ajusta el valor del margen según tu preferencia */
+    border: none !important;
+    
+}
+
+/* Establece un margen entre las celdas (td) */
+.td-videos {
+    margin-right: 10px; /* Ajusta el valor del margen horizontal según tus necesidades */
+    margin-bottom: 10px; /* Ajusta el valor del margen vertical según tus necesidades */
+}
+
+/* Alinea el contenido de las celdas al centro horizontal y verticalmente */
+.td-videos iframe {
+
+    display: block;
+    margin: 0 auto; /* Centrar horizontalmente */
+    vertical-align: middle; /* Centrar verticalmente */
+}
+
+/* Establece un fondo o un borde en las celdas para resaltarlas */
+.td-videos {
+    background-color: rgb(204, 204, 204); /* Cambia el color de fondo si lo deseas */
+    padding: 10px; /* Ajusta el espaciado interno según tus necesidades */
+}
 
 
 
