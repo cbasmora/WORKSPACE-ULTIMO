@@ -96,7 +96,7 @@ ul  {list-style:none;
     padding: 0;}
 
 li  {margin-bottom: 10px;
-        width: 50%}
+        width: 60%}
     /* Estilo para el icono de PDF */
 ul li img {
     width: 30px; /* Tamaño del icono */
@@ -116,7 +116,7 @@ a:hover {background-color: #868686;}
 
 footer {color: rgb(70, 70, 66);}
 
-#description-box{
+#description-box{ /*espacio de la caja de descripción que aparece al seleccionar el archivo*/
     position: fixed;
     right: 5%;
     top: 50%;
