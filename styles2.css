@@ -121,83 +121,30 @@ a   {display: block;
     padding: 10px;
     display: flex;
     align-items: center;
-    border-radius: 5px;}
+    border-radius: 25px;}
 
 a:hover {background-color: #868686;}
 
 footer {color: rgb(70, 70, 66);}
 
-#description-box{ /*espacio de la caja de descripción que aparece al seleccionar el archivo*/
-    position: fixed;
-    right: 5%;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: #f0f0f0;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-    z-index: 1000;
-    max-width: 200px;}
-
 .hidden {display: none;}
 
 table {
     margin-top: 20px;
-    border-radius: 1px;
-    width: 50%;
+    width: 70%;
 
 }
 
-tr {
-    margin-bottom: 80px;
-    }
+
 td {
     
-    border-radius: 5px;
-    padding: 10px;
-    background-color: rgb(204, 204, 204);
-    margin-bottom: 20px;
+    border-radius: 15px;
+    padding: 10px 30px 20px;
     
-}
-.column1 {
-    margin-bottom: 20px;
-    width: 70%; /* Porcentaje del ancho de la tabla */
-    
-}
-.column2 {
-    text-align: center;
-    margin-bottom: 80px;
-    width: 30%; /* Porcentaje del ancho de la tabla */
 }
 
 iframe {
     
     width: 270px;  /* Establecer el ancho al 30% del contenedor padre */
     height: 150px; /* Establecer el alto al 20% del contenedor padre */
-}
-
-.video-container {
-    margin: 10px; /* Ajusta el valor del margen según tu preferencia */
-    border: none !important;
-    
-}
-
-/* Establece un margen entre las celdas (td) */
-.td-videos {
-    margin-right: 10px; /* Ajusta el valor del margen horizontal según tus necesidades */
-    margin-bottom: 10px; /* Ajusta el valor del margen vertical según tus necesidades */
-}
-
-/* Alinea el contenido de las celdas al centro horizontal y verticalmente */
-.td-videos iframe {
-
-    display: block;
-    margin: 0 auto; /* Centrar horizontalmente */
-}
-
-/* Establece un fondo o un borde en las celdas para resaltarlas */
-.td-videos {
-    background-color: rgb(204, 204, 204); /* Cambia el color de fondo si lo deseas */
-    padding: 10px; /* Ajusta el espaciado interno según tus necesidades */
 }
