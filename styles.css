@@ -107,14 +107,15 @@ ul  {list-style:none;
     padding: 0;}
 
 li  {margin-bottom: 10px;
-        width: 60%}
+        width: 100%}
     /* Estilo para el icono de PDF */
 ul li img {
-    width: 30px; /* Tamaño del icono */
+    width: 40%; /* Tamaño del icono */
     margin-right: 10px; /* Espacio entre el icono y el texto */
   }
   
 a   {display: block;
+    height: 100%;
     background-color: rgb(204, 204, 204);
     color: rgb(0, 0, 0);
     text-decoration: none;
@@ -200,4 +201,39 @@ iframe {
 .td-videos {
     background-color: rgb(204, 204, 204); /* Cambia el color de fondo si lo deseas */
     padding: 10px; /* Ajusta el espaciado interno según tus necesidades */
+}
+
+
+#document-list {
+    list-style-type: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    justify-content: center;
+}
+
+#document-list li {
+    text-align: center;
+    font-size: small;
+}
+
+#document-list li a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    width: 85%;
+    height: 90%; /* Ajusta la altura según tus necesidades */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#document-list li img {
+    margin-bottom: 10%;
 }
