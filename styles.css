@@ -59,18 +59,19 @@ input {
     border: none;
     border-top: 2px solid rgb(204, 204, 204); /* Color y estilo de la línea que separa el logo de PACI en el menú*/
     margin: 20px 0;
-    width: 70%;
+    width: 70% ;
 
     
  } /* Espacio antes y después de la línea */
 .main-content {
     width: 80%;
     margin-left: 200px; /* Ajustar el margen izquierdo para dar espacio al menú */
-    padding: 0px;
+    padding: 0px ;
 }
 
 #menua:hover {background-color: #161616;}/*en esta parte se modifica el color del menu cuando el cursor pasa por encima*/
-#menua {display: block;
+#menua {
+    display: block;
     background-color: #55676e;
     color: #fff;
     text-decoration: none;
