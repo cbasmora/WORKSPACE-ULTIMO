@@ -237,3 +237,16 @@ iframe {
 #document-list li img {
     margin-bottom: 10%;
 }
+
+.slider-container {
+    border-radius: 25;
+    padding-top: 50px;
+    overflow: hidden;
+    width: 50%;
+    margin: auto;
+}
+
+.slider-wrapper {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
