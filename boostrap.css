@@ -94,7 +94,6 @@ button,select{
     text-transform:none
 }
 button,html input[type=button],input[type=reset],input[type=submit]{
-    -webkit-appearance:button;
     cursor:pointer
 }
 button[disabled],html input[disabled]{
@@ -120,7 +119,6 @@ input[type=search]{
     -webkit-box-sizing:content-box;
     -moz-box-sizing:content-box;
     box-sizing:content-box;
-    -webkit-appearance:textfield
 }
 input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{
     -webkit-appearance:none
@@ -2292,9 +2290,7 @@ output{
 textarea.form-control{
     height:auto
 }
-input[type=search]{
-    -webkit-appearance:none
-}
+
 @media screen and (-webkit-min-device-pixel-ratio:0){
     input[type=date].form-control,input[type=time].form-control,input[type=datetime-local].form-control,input[type=month].form-control{
         line-height:34px
