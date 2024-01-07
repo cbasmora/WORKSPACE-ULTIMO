@@ -5469,17 +5469,21 @@ button.close{
 }
 .carousel-indicators li{
     display:inline-block;
-    width:10px;
-    height:10px;
+    width:20px;
+    height:20px;
     margin:1px;
     text-indent:-999px;
     cursor:pointer;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 25px;
+    border: 1px solid #000;
 }
 .carousel-indicators .active{
-    width:12px;
-    height:12px;
+    width:25px;
+    height:25px;
     margin:0;
-    background-color:#fff
+    background-color:#fff;
+    
 }
 .carousel-caption{
     position:absolute;
@@ -5498,16 +5502,13 @@ button.close{
 }
 @media screen and (min-width:768px){
     .carousel-control .glyphicon-chevron-left,.carousel-control .glyphicon-chevron-right,.carousel-control .icon-next,.carousel-control .icon-prev{
-        width:30px;
-        height:30px;
-        margin-top:-10px;
-        font-size:30px
+        color: #000;
     }
     .carousel-control .glyphicon-chevron-left,.carousel-control .icon-prev{
-        margin-left:-10px
+        margin-left:10px
     }
     .carousel-control .glyphicon-chevron-right,.carousel-control .icon-next{
-        margin-right:-10px
+        margin-right:10px
     }
     .carousel-caption{
         right:20%;
