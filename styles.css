@@ -176,7 +176,10 @@ iframe {
     width: 270px;  /* Establecer el ancho al 30% del contenedor padre */
     height: 150px; /* Establecer el alto al 20% del contenedor padre */
 }
-
+.video-destacado {
+    width: 80%;
+    height: 500px;
+}
 .video-container {
     margin: 10px; /* Ajusta el valor del margen según tu preferencia */
     border: none !important;
