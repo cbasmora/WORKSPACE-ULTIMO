@@ -25,23 +25,27 @@
             <ul>
                 <li><a id="menua" href="inicio.html">🏠 inicio</a></li>
                 <li><a id="menua" href="index.html">Documentos Imprimibles</a></li>
-                <li><a id="menua" href="videos.html">Videos Institucionales</a></li>
+                <li><a id="menua" href="videos.html">Videos</a></li>
+                <li class="dropdown"><a id="menua" class="dropdown-btn" onclick="toggleDropdown()">Links</a>
+                    <div class="dropdown-content">
+                        <a href="#">Enlace 1</a>
+                        <a href="#">Enlace 2</a>
+                        <a href="#">Enlace 3</a>
+                        <!-- Agrega más elementos según sea necesario para tu submenú -->
+                    </div>
+                </li>
                 <li><a id="menua" href="extensiones.html">Extensiones Telefónicas</a></li>
                 <li><a id="menua" href="disponibilidad.html">Disponibilidades</a></li>
                 <li><a id="menua" class="confirmarSalida" href="http://192.168.1.150/ProyectoBaseDatos/includes/_sesion/login.php">Inventarios</a></li>
+                <li><a id="menub" href="reportes.html">⚠️ Módulo de Reportes</a></li>
             </ul>
-            <ul>
-                <li><a id="menub" href="reportes.html">⚠️ Reportar Mantenimiento</a></li>
-                </ul>
         </center>
     </div>
-        <header>
-            <img id="titulo" src="img/Tittle.png"/>
-        </header>      
-
-        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-        <script src="script.js" ></script>
-
+    <header>
+        <img id="titulo" src="img/Tittle.png"/>
+    </header>      
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="confirmacion.js" ></script>
 </body>
 <footer>
     <center>
@@ -51,5 +55,4 @@
         2023 <br>
     </center>
 </footer>
-
 </html>

@@ -15,3 +15,8 @@ function confirmarSalida(event) {
 
 // Asigna la función al evento click del documento
 document.addEventListener("click", confirmarSalida);
+
+function toggleDropdown() {
+    var dropdownContent = document.querySelector('.dropdown-content');
+    dropdownContent.style.display = (dropdownContent.style.display === 'block') ? 'none' : 'block';
+}
