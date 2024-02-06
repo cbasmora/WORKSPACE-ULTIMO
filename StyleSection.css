@@ -1,0 +1,68 @@
+body {
+    font-family: Arial, sans-serif;
+    color: #f9f9f9;
+}
+
+.category {
+    margin: 0 auto 10px;
+    width: 60%;
+    position: relative;
+}
+
+.category h2 {
+    border-radius: 10px;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    padding: 15px;
+    background: linear-gradient(to right, #0e3a5c, #2688eb);
+    margin: 0;
+    position: relative;
+    font-size: 1.1rem;
+    font-weight: normal;
+
+}
+.category h2:hover {
+    cursor: pointer;
+    border: 1px solid #ddd;
+    padding: 15px;
+    background-color: #19538d;
+    margin: 0;
+    position: relative;
+}
+
+.category h2::after {
+    content: "▼";
+    color: rgba(255, 255, 255, 0.562);
+    display: inline-block;
+    position: absolute;
+    right: 10px;
+    transition: transform 0.3s ease; 
+}
+
+.category.open h2::after {
+    transform: rotate(180deg);
+}
+
+.locations {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+}
+
+.category.open .locations {
+    max-height: 500px; /* ajusta esto según el contenido real de las ubicaciones */
+}
+
+.location {
+    display: block;
+    text-decoration: none;
+    color: #333;
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    transition: background-color 0.3s ease;
+}
+
+.location:hover {
+    background-color: #f9f9f9;
+}
