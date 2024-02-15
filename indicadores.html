@@ -52,6 +52,16 @@
 <body>
     <div class="divcategory">
 <br><br>
+<div class="category2">
+    <h2 onclick="toggleLocations('formularios')">Gestión de Interconsultas</h2>
+    <div id="formularios" class="locations">
+        <a href="https://docs.google.com/spreadsheets/d/1KoVAnAGuKHthtEgIT9iPbHfEABeJzTuwE8bC-aGBnnE/edit#gid=14697449" target="_blank" class="location" onclick="reportar('Formularios - Ubicación 1')">Gestión de Indicadores Interconsultas UCIP Manizales 2024</a>
+        <a href="https://docs.google.com/spreadsheets/d/1YDcQedo3fcY6plHlmOmivHK_e9gK5V-qYqw1ZJu7uPU/edit#gid=14697449" target="_blank" class="location" onclick="reportar('Formularios - Ubicación 2')">Gestión de Indicadores Interconsultas HOSPITALIZACIÓN Manizales 2024</a>
+        <a href="https://docs.google.com/spreadsheets/d/1ezQ_iiKvkA4j46YYUBIjM0leixazCV9_wa_kMHaTMWs/edit#gid=14697449" target="_blank" class="location" onclick="reportar('Formularios - Ubicación 2')">Gestión de Indicadores Interconsultas UCIN Manizales 2024</a>
+
+        <!-- Agrega más enlaces según tus necesidades -->
+    </div>
+</div>
 <div class="category">
     <h2 onclick="toggleLocations('formularios')">Formularios</h2>
     <div id="formularios" class="locations">
@@ -167,7 +177,21 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
     </script>
-
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const categories = document.querySelectorAll('.category2');
+        
+            categories.forEach(category => {
+                const header = category.querySelector('h2');
+                const locations = category.querySelector('.locations');
+        
+                header.addEventListener('click', function() {
+                    category.classList.toggle('open');
+                    locations.style.maxHeight = category.classList.contains('open') ? locations.scrollHeight + 'px' : '0';
+                });
+            });
+        });
+            </script>
 </body>
 </html>
 
