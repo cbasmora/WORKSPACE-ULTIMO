@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <link rel="shortcut icon" href="ico/impresora.ico">
     <meta charset="UTF-8">
@@ -7,72 +7,168 @@
     <meta http-equiv="cache-control" content="no-store, no-cache, must-revalidate, max-age=0">
     <meta http-equiv="pragma" content="no-cache">
     <meta http-equiv="expires" content="0">
-    <link rel="stylesheet" href="styles2.css">
-    <title>PACI | Turnos</title>
+
+    <link rel="stylesheet" href="stylemenu.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles3.css">
+
+    <title>PACI | Disponibilidades</title>
     <script src="confirmacion.js" defer></script>
 </head>
-<body>
+<body> 
     <div class="menu">
-        <img src="Img/logo_paci.png" alt="Logo" id="logo" style="cursor: pointer;" onclick="window.location.href = 'index.html';"> <!-- Agrega tu logo aquí -->
-        <center><hr></center>
-        <center>
+        <div class="area"></div><nav class="main-menu">
             <ul>
-                <li><a id="menua" href="inicio.html">🏠 Inicio</a></li>
-                <li><a id="menua" href="index.html">Documentos Imprimibles</a></li>
-                <li><a id="menua" href="termohigrometros.html">Registro Termohigrometros</a></li>
-                <li><a id="menua" href="extensiones.html">Extensiones Telefónicas</a></li>
-                <li><a id="menua" href="disponibilidad.html">Disponibilidades</a></li>
-                <li><a id="menua" href="indicadores.html">Indicadores</a></li>
-                <li><a id="menua" class="confirmarSalida" href="http://192.168.1.150/ProyectoBaseDatos/includes/_sesion/login.php">Inventarios</a></li>
-                <li><a id="menub" href="reportes.html">⚠️ Módulo de Reportes</a></li>
+                <li>
+                    <a href="inicio.html">
+                        <i class="fa fa-home fa-2x"></i>
+                        <span class="nav-text">
+                           Inicio
+                        </span>
+                    </a>
+                  
+                </li>
+                <li class="has-subnav">
+                    <a href="index.html">
+                        <i class="fa fa-solid fa-print fa-2x"></i>
+                        <span class="nav-text">
+                            Documentos Imprimibles
+                        </span>
+                    </a>
+                    
+                </li>
+            </li>
+            <li class="has-subnav">
+                <a href="videos.html">
+                    <i class="fa fa-solid fa-video fa-2x"></i>
+                    <span class="nav-text">
+                        Videos Institucionales
+                    </span>
+                </a>
+                
+            </li>
+                <li class="has-subnav">
+                    <a href="termohigrometros.html">
+                        <i class="fa fa-temperature-high fa-2x"></i>
+                        <span class="nav-text">
+                            Registro Termohigrometros
+                        </span>
+                    </a>
+                    
+                </li>
+                <li class="has-subnav">
+                    <a href="extensiones.html">
+                        <i class="fa fa-solid fa-phone fa-2x"></i>
+                        <span class="nav-text">
+                            Extensiones Telefónicas
+                        </span>
+                    </a>
+                   
+                </li>
+                <li>
+                    <a href="disponibilidad.html">
+                        <i class="fa fa-address-book fa-2x" aria-hidden="true"></i>
+                        <span class="nav-text">
+                            Disponibilidades
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="indicadores.html">
+                        <i class="fa fa-solid fa-chart-line fa-2x"></i>
+                        <span class="nav-text">
+                           Indicadores de Calidad
+                        </span>
+                    </a>
+                </li>
+
+                <li>
+                   <a href="Talentohumano.html">
+                    <i class="fa fa-users fa-2x" aria-hidden="true"></i>
+                        <span class="nav-text">
+                            Talento Humano
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a class="confirmarSalida" href="http://192.168.1.150/ProyectoBaseDatos/includes/_sesion/login.php">
+                      <i class="fa fa-cogs fa-2x"></i>
+                       <span class="nav-text">
+                           Inventarios
+                       </span>
+                   </a>
+
+                  </li>  
+
             </ul>
+
+            <ul class="logout">
+                <li>
+                    <a href="reportes.html">
+                        <i ID="triangle" class="fa fa-exclamation-triangle fa-2x" aria-hidden="true"></i>
+                          <span class="nav-text">
+                              Módulo de reportes
+                          </span>
+                      </a>
+                   </li>
+            </ul>
+        </nav>
+    </div>
     </center>
     </div>
-    <header>
-        <img id="titulo" src="img/Tittle-5.png"/>
-    </header>
-    <br><br>
-
-    <center><table>
-        <tr>
-            <td><a href="https://docs.google.com/spreadsheets/d/1zqGX5b9GfypnD9t-Q6np0E-lMDFM2E4h/edit#gid=996762727" target="_blank"><img src="Img/quirofano.png" alt="Imagen 1"></a></td>
-            <td><a href="https://docs.google.com/spreadsheets/d/16-t7ysc_DQuimaG-UbtbX6Nao_LQpf5M/edit#gid=2129396025" target="_blank"><img src="Img/especialista.png" alt="Imagen 2"></a></td>
-            <td><a href="https://docs.google.com/spreadsheets/d/14hM7_-5_6cAR6ro0-5QdH7pdJ2bJXmFa/edit#gid=1410790002" target="_blank"><img src="Img/enfermeria.png" alt="Imagen 3"></a></td>
-        </tr>
-        <tr>
-            <td><a href="https://docs.google.com/spreadsheets/d/18OaiPpP-M3WY2_HmzWQuJMZbCEL7HMRqPmwaw5SpAYE/edit#gid=0" target="_blank"><img src="Img/serviciogenerales.png" alt="Imagen 4"></a></td>
-            <td><a href="https://docs.google.com/spreadsheets/d/1R26bTgdX2uBZnfwk0GCQzw8ZY7pcLOel/edit#gid=346843132" target="_blank"><img src="Img/bacteriologia.png" alt="Imagen 5"></a></td>
-            <td><a href="https://docs.google.com/spreadsheets/d/1b85NmUXChbfSuotSj-3fDf2P7qcCv-kcCnk0QJm0pbM/edit#gid=0" target="_blank"><img src="Img/pediatria.png" alt="Imagen 6"></a></td>
-        </tr>
-        <tr>
-            <td><a href="https://docs.google.com/spreadsheets/d/1PgJYMQZNdKRiYhKHIns0_htnb6WYHU0Y/edit#gid=1883294092" target="_blank"><img src="Img/orientador.png" alt="Imagen 7"></a></td>
-            <td><a href="https://docs.google.com/spreadsheets/d/1TVh6yn7urnAGVO27Yfqqb1y5YEpHycii/edit#gid=350732255" target="_blank"><img src="Img/farmacia.png" alt="Imagen 8"></a></td>
-            <td><a href="https://docs.google.com/spreadsheets/d/1rBQY3f8rB5NYqzkHM15dCGXEsLqxenbsJL87uQ9ZsKk/edit#gid=1531079280" target="_blank"><img src="Img/terapia.png" alt="Imagen 9"></a></td>
-
-
-        </tr>
-        <tr>
-            <td><a href="https://docs.google.com/spreadsheets/d/1_cOCTSPH4l8BAoReUTrEVO21UIe2SmxEubhhB7ySGHU/edit#gid=0" target="_blank"><img src="Img/biomedico.png" alt="Imagen 10"></a></td>
-            <td><a href="https://docs.google.com/spreadsheets/d/1zanZj2gpni90LdKjeTXjOb9jFftCvq1b523MZ_4xAzM/edit#gid=351723304" target="_blank"><img src="Img/pediatrica.png" alt="Imagen 11"></a></td>
-            <td><a href="https://docs.google.com/spreadsheets/d/1jlk9jSRYiKZcRhTmAe69oD0Ms8GOGalO/edit#gid=268583882" target="_blank"><img src="Img/rayosxct.png" alt="Imagen 12"></a></td>
+<div id="caja-bloqueada">
+        <header>
+            <img class="encabezado-fijo" src="img/Tittle-5.png"/>
+        </header>     
+    </div> 
+<main>
+        <center>
+            <input type="text" id="search" placeholder="Buscar disponibilidad...">
+        </center>
+        <center><ul id="document-list">
+	        <li><span><a href="https://docs.google.com/spreadsheets/d/1zqGX5b9GfypnD9t-Q6np0E-lMDFM2E4h/edit#gid=996762727" target="_blank"><img src="Img/quirofanotp.png" alt="PDF icon">SALA DE QUIRÓFANO</a></li></span>
+	        <li><span><a href="https://docs.google.com/spreadsheets/d/16-t7ysc_DQuimaG-UbtbX6Nao_LQpf5M/edit#gid=2129396025" target="_blank"><img src="img/medicos generalestp.png" alt="PDF icon">ESPECIALISTAS</a></li></span>
+	        <li><span><a href="https://docs.google.com/spreadsheets/d/14hM7_-5_6cAR6ro0-5QdH7pdJ2bJXmFa/edit#gid=1410790002" target="_blank"><img src="img/enfermeriatp.png" alt="PDF icon">ENFERMERIA</a></li></span>
+	        <li><span><a href="https://docs.google.com/spreadsheets/d/18OaiPpP-M3WY2_HmzWQuJMZbCEL7HMRqPmwaw5SpAYE/edit#gid=0" target="_blank"><img src="img/serviciosgeneralestp.png" alt="PDF icon">SERVICIOS GENERALES</a></li></span>
+	        <li><span><a href="https://docs.google.com/spreadsheets/d/1R26bTgdX2uBZnfwk0GCQzw8ZY7pcLOel/edit#gid=346843132" target="_blank"><img src="img/Laboratoriotp.png" alt="PDF icon">LABORATORIO</a></li></span>
+	        <li><span><a href="https://docs.google.com/spreadsheets/d/1b85NmUXChbfSuotSj-3fDf2P7qcCv-kcCnk0QJm0pbM/edit#gid=0" target="_blank"><img src="img/medicostp.png" alt="PDF icon">MEDICOS PEDIATRIAS</a></li></span>
+	        <li><span><a href="https://docs.google.com/spreadsheets/d/1PgJYMQZNdKRiYhKHIns0_htnb6WYHU0Y/edit#gid=1883294092" target="_blank"><img src="img/orientadortp.png" alt="PDF icon">ORIENTADORES</a></li></span>
+	        <li><span><a href="https://docs.google.com/spreadsheets/d/1TVh6yn7urnAGVO27Yfqqb1y5YEpHycii/edit#gid=350732255" target="_blank"><img src="img/farmaciatp.png" alt="PDF icon">SERVICIO FARMACEUTICO</a></li></span>
+	        <li><span><a href="https://docs.google.com/spreadsheets/d/1rBQY3f8rB5NYqzkHM15dCGXEsLqxenbsJL87uQ9ZsKk/edit#gid=635001685" target="_blank"><img src="img/terapiaresptp.png" alt="PDF icon">TERAPIA RESPIRATORIA</a></li></span>
+	        <li><span><a href="https://docs.google.com/spreadsheets/d/1_cOCTSPH4l8BAoReUTrEVO21UIe2SmxEubhhB7ySGHU/edit#gid=0" target="_blank"><img src="img/biomedicotp.png" alt="PDF icon">ÁREA BIOMÉDICA</a></li></span>
+	        <li><span><a href="https://docs.google.com/spreadsheets/d/1zanZj2gpni90LdKjeTXjOb9jFftCvq1b523MZ_4xAzM/edit#gid=351723304" target="_blank"><img src="img/cirugiapediatricatp.png" alt="PDF icon">CIRUJÍA PEDIÁTRICA</a></li></span>
+	        <li><span><a href="https://docs.google.com/spreadsheets/d/1jlk9jSRYiKZcRhTmAe69oD0Ms8GOGalO/edit#gid=1756684148" target="_blank"><img src="img/rayosxtp.png" alt="PDF icon">PERSONAL RAYOS X</a></li></span>
+	        <li><span><a href="https://docs.google.com/spreadsheets/d/1lTQIv-Dd1xJEYGSnN9_NTdihcfMuTqf9/edit#gid=1711211492" target="_blank"><img src="img/referenciatp.png" alt="PDF icon">REFERENCIA/AUTORIZACIONES</a></li></span>
+	        <li><span><a href="https://docs.google.com/spreadsheets/d/1NKyOhgg68gOrQEsnJH9k6MB0vmzVM7AE/edit#gid=1865074366" target="_blank"><img src="img/psicotp.png" alt="PDF icon">PSICOLOGÍA</a></li></span>
 
 
-        </tr>
-        <tr>
-            <td><a href="https://docs.google.com/spreadsheets/d/1lTQIv-Dd1xJEYGSnN9_NTdihcfMuTqf9/edit#gid=77180120" target="_blank"><img src="Img/referencia.png" alt="Imagen 13"></a></td>
 
 
-        </tr>
-    </center></table>
-    <br><br>
-<div>
+            
+
+
+
+
+
+
+
+
+
+       
+            <!-- podemos agregar más PDF copiando el codigo anterior y cambiando la ruta donde se encuentra el PDF-->
+        </ul></center>
+    <!--<div id="description-box" class="hidden"></div> -->
+    <script src="script.js"></script>
+</main>
+</body>
 <footer>
-    <center>&copy; Meintegral S.A.S - Todos los derechos reservados <br>
+    <center><br><br>
+        &copy; Meintegral S.A.S - Todos los derechos reservados <br>
         Desarrollado por Jhon Sebastian Mora Agudelo<br>
         Manizales - Caldas<br>
-        2023 - 2024
-        </center>
+        2023 - 2024 <br>
+    </center>
+    <br>
 </footer>
-</div>
+
 </html>
-</body>
