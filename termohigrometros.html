@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <link rel="shortcut icon" href="ico/impresora.ico">
     <meta charset="UTF-8">
@@ -7,79 +7,190 @@
     <meta http-equiv="cache-control" content="no-store, no-cache, must-revalidate, max-age=0">
     <meta http-equiv="pragma" content="no-cache">
     <meta http-equiv="expires" content="0">
-    <link rel="stylesheet" href="styles2.css">
-    <title>PACI | Turnos</title>
+
+
+    <link rel="stylesheet" href="stylemenu.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles3.css">
+
+    <title>PACI | Termohigrometros</title>
     <script src="confirmacion.js" defer></script>
 </head>
-<body>
+<body> 
     <div class="menu">
-        <img src="Img/logo_paci.png" alt="Logo" id="logo" style="cursor: pointer;" onclick="window.location.href = 'index.html';"> <!-- Agrega tu logo aquí -->
-        <center><hr></center>
-        <center>
+        <div class="area"></div><nav class="main-menu">
             <ul>
-                <li><a id="menua" href="inicio.html">🏠 Inicio</a></li>
-                <li><a id="menua" href="index.html">Documentos Imprimibles</a></li>
-                <li><a id="menua" href="termohigrometros.html">Registro Termohigrometros</a></li>
-                <li><a id="menua" href="extensiones.html">Extensiones Telefónicas</a></li>
-                <li><a id="menua" href="disponibilidad.html">Disponibilidades</a></li>
-                <li><a id="menua" href="indicadores.html">Indicadores</a></li>
-                <li><a id="menua" class="confirmarSalida" href="http://192.168.1.150/ProyectoBaseDatos/includes/_sesion/login.php">Inventarios</a></li>
-                <li><a id="menub" href="reportes.html">⚠️ Módulo de Reportes</a></li>
+                <li>
+                    <a href="inicio.html">
+                        <i class="fa fa-home fa-2x"></i>
+                        <span class="nav-text">
+                           Inicio
+                        </span>
+                    </a>
+                  
+                </li>
+                <li class="has-subnav">
+                    <a href="accesos-meintegral.html">
+                        <i class="fa fa-solid fa-globe fa-2x"></i>
+                        <span class="nav-text">
+                            Accesos Meintegral
+                        </span>
+                    </a>
+                    
+                </li>
+                <li class="has-subnav">
+                    <a href="index.html">
+                        <i class="fa fa-solid fa-print fa-2x"></i>
+                        <span class="nav-text">
+                            Documentos Imprimibles
+                        </span>
+                    </a>
+                    
+                </li>
+                <li class="has-subnav">
+                    <a href="documentos-digitales.html">
+                        <i class="fa fa-solid fa-download fa-2x"></i>
+                        <span class="nav-text">
+                            Documentos Digitales
+                        </span>
+                    </a>
+                    
+                </li>
+            <li class="has-subnav">
+                <a href="videos.html">
+                    <i class="fa fa-solid fa-video fa-2x"></i>
+                    <span class="nav-text">
+                        Videos Institucionales
+                    </span>
+                </a>
+                
+            </li>
+                <li class="has-subnav">
+                    <a href="termohigrometros.html">
+                        <i class="fa fa-temperature-high fa-2x"></i>
+                        <span class="nav-text">
+                            Registro Termohigrometros
+                        </span>
+                    </a>
+                    
+                </li>
+                <li class="has-subnav">
+                    <a href="extensiones.html">
+                        <i class="fa fa-solid fa-phone fa-2x"></i>
+                        <span class="nav-text">
+                            Extensiones Telefónicas
+                        </span>
+                    </a>
+                   
+                </li>
+                <li>
+                    <a href="disponibilidad.html">
+                        <i class="fa fa-address-book fa-2x" aria-hidden="true"></i>
+                        <span class="nav-text">
+                            Disponibilidades
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="indicadores.html">
+                        <i class="fa fa-solid fa-chart-line fa-2x"></i>
+                        <span class="nav-text">
+                           Indicadores de Calidad
+                        </span>
+                    </a>
+                </li>
+
+                <li>
+                   <a href="Talentohumano.html">
+                    <i class="fa fa-users fa-2x" aria-hidden="true"></i>
+                        <span class="nav-text">
+                            Talento Humano
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a class="confirmarSalida" href="inventarios.html">
+                      <i class="fa fa-cogs fa-2x"></i>
+                       <span class="nav-text">
+                           Inventarios
+                       </span>
+                   </a>
+
+                  </li>  
+
             </ul>
+
+            <ul class="logout">
+                <li>
+                    <a href="reportes.html">
+                        <i ID="triangle" class="fa fa-exclamation-triangle fa-2x" aria-hidden="true"></i>
+                          <span class="nav-text">
+                              Módulo de reportes
+                          </span>
+                      </a>
+                   </li>
+            </ul>
+        </nav>
+    </div>
     </center>
     </div>
-    <header>
-        <img id="titulo" src="img/Tittle-8.png"/>
-    </header>
-    <br><br>
-
-    <center><table>
-        <tr>
-            <td><a href="https://docs.google.com/spreadsheets/d/1-xFK9hp4Of009JESY_UsOiS9BdaxCVvE/edit#gid=1627475666" target="_blank"><img src="Img/tambulancia.png" alt="Imagen 1"></a></td>
-            <td><a href="https://docs.google.com/spreadsheets/d/1-xFK9hp4Of009JESY_UsOiS9BdaxCVvE/edit#gid=520983961" target="_blank"><img src="Img/tconsultaexterna.png" alt="Imagen 2"></a></td>
-            <td><a href="https://docs.google.com/spreadsheets/d/1-xFK9hp4Of009JESY_UsOiS9BdaxCVvE/edit#gid=1701771055" target="_blank"><img src="Img/tterapia.png" alt="Imagen 3"></a></td>
-        </tr>
-        <tr>
-            <td><a href="https://docs.google.com/spreadsheets/d/1-xFK9hp4Of009JESY_UsOiS9BdaxCVvE/edit#gid=1802675303" target="_blank"><img src="Img/tfarmacia.png" alt="Imagen 4"></a></td>
-            <td><a href="https://docs.google.com/spreadsheets/d/1-xFK9hp4Of009JESY_UsOiS9BdaxCVvE/edit#gid=1465172067" target="_blank"><img src="Img/tfarmaciaQX.png" alt="Imagen 5"></a></td>
-            <td><a href="https://docs.google.com/spreadsheets/d/1-xFK9hp4Of009JESY_UsOiS9BdaxCVvE/edit#gid=1433246613" target="_blank"><img src="Img/thospitap3.png" alt="Imagen 6"></a></td>
-        </tr>
-        <tr>
-            <td><a href="https://docs.google.com/spreadsheets/d/1-xFK9hp4Of009JESY_UsOiS9BdaxCVvE/edit#gid=881493685" target="_blank"><img src="Img/thospitap4.png" alt="Imagen 7"></a></td>
-            <td><a href="https://docs.google.com/spreadsheets/d/1-xFK9hp4Of009JESY_UsOiS9BdaxCVvE/edit#gid=1857629805" target="_blank"><img src="Img/thospitap5.png" alt="Imagen 8"></a></td>
-            <td><a href="https://docs.google.com/spreadsheets/d/1-xFK9hp4Of009JESY_UsOiS9BdaxCVvE/edit#gid=1152898056" target="_blank"><img src="Img/tlaboratorio.png" alt="Imagen 9"></a></td>
-
-
-        </tr>
-        <tr>
-            <td><a href="https://docs.google.com/spreadsheets/d/1-xFK9hp4Of009JESY_UsOiS9BdaxCVvE/edit#gid=12401565" target="_blank"><img src="Img/tlactario.png" alt="Imagen 10"></a></td>
-            <td><a href="https://docs.google.com/spreadsheets/d/1-xFK9hp4Of009JESY_UsOiS9BdaxCVvE/edit#gid=615911642" target="_blank"><img src="Img/tqx.png" alt="Imagen 11"></a></td>
-            <td><a href="https://docs.google.com/spreadsheets/d/1-xFK9hp4Of009JESY_UsOiS9BdaxCVvE/edit#gid=1968845873" target="_blank"><img src="Img/thospitacarro.png" alt="Imagen 11"></a></td>
-
-
-        </tr>
-        <tr>
-            <td><a href="https://docs.google.com/spreadsheets/d/1-xFK9hp4Of009JESY_UsOiS9BdaxCVvE/edit#gid=1284350696" target="_blank"><img src="Img/thospitacarrop4.png" alt="Imagen 10"></a></td>
-            <td><a href="https://docs.google.com/spreadsheets/d/1-xFK9hp4Of009JESY_UsOiS9BdaxCVvE/edit#gid=2004836138" target="_blank"><img src="img/thospitacarrop5.png" alt="Imagen 11"></a></td>
-            <td><a href="https://docs.google.com/spreadsheets/d/1-xFK9hp4Of009JESY_UsOiS9BdaxCVvE/edit#gid=1195634846" target="_blank"><img src="img/tucip.png" alt="Imagen 11"></a></td>
+<div id="caja-bloqueada">
+        <header>
+            <img class="encabezado-fijo" src="img/Tittle-8.png"/>
+        </header>     
+    </div> 
+<main>
+        <center>
+            <input type="text" id="search" placeholder="Buscar termohigrometro...">
+        </center>
+        <center><ul id="document-list">
+	        <li><span><a href="https://docs.google.com/spreadsheets/d/1-xFK9hp4Of009JESY_UsOiS9BdaxCVvE/edit#gid=1627475666" target="_blank"><img src="img/tmh.svg" alt="PDF icon">AMBULANCIA</a></li></span>
+	        <li><span><a href="https://docs.google.com/spreadsheets/d/1-xFK9hp4Of009JESY_UsOiS9BdaxCVvE/edit#gid=520983961" target="_blank"><img src="img/tmh.svg" alt="PDF icon">CONSULTA EXTERNA</a></li></span>
+	        <li><span><a href="https://docs.google.com/spreadsheets/d/1-xFK9hp4Of009JESY_UsOiS9BdaxCVvE/edit#gid=1701771055" target="_blank"><img src="img/tmh.svg" alt="PDF icon">TERAPIA RESPIRATORIA</a></li></span>
+	        <li><span><a href="https://docs.google.com/spreadsheets/d/1-xFK9hp4Of009JESY_UsOiS9BdaxCVvE/edit#gid=1802675303" target="_blank"><img src="img/tmh.svg" alt="PDF icon">SERVICIO FARMACÉUTICO</a></li></span>
+	        <li><span><a href="https://docs.google.com/spreadsheets/d/1-xFK9hp4Of009JESY_UsOiS9BdaxCVvE/edit#gid=1465172067" target="_blank"><img src="img/tmh.svg" alt="PDF icon">FARMACIA QX</a></li></span>
+	        <li><span><a href="https://docs.google.com/spreadsheets/d/1-xFK9hp4Of009JESY_UsOiS9BdaxCVvE/edit#gid=1433246613" target="_blank"><img src="img/tmh.svg" alt="PDF icon">HOSPITALIZACIÓN P3</a></li></span>
+	        <li><span><a href="https://docs.google.com/spreadsheets/d/1-xFK9hp4Of009JESY_UsOiS9BdaxCVvE/edit#gid=881493685" target="_blank"><img src="img/tmh.svg" alt="PDF icon">HOSPITALIZACIÓN P4</a></li></span>
+	        <li><span><a href="https://docs.google.com/spreadsheets/d/1-xFK9hp4Of009JESY_UsOiS9BdaxCVvE/edit#gid=1857629805" target="_blank"><img src="img/tmh.svg" alt="PDF icon">HOSPITALIZACIÓN P5</a></li></span>
+	        <li><span><a href="https://docs.google.com/spreadsheets/d/1-xFK9hp4Of009JESY_UsOiS9BdaxCVvE/edit#gid=1152898056" target="_blank"><img src="img/tmh.svg" alt="PDF icon">LABORATORIO</a></li></span>
+	        <li><span><a href="https://docs.google.com/spreadsheets/d/1-xFK9hp4Of009JESY_UsOiS9BdaxCVvE/edit#gid=1516800257" target="_blank"><img src="img/tmh.svg" alt="PDF icon">LACTARIO INTERNO</a></li></span>
+	        <li><span><a href="https://docs.google.com/spreadsheets/d/1-xFK9hp4Of009JESY_UsOiS9BdaxCVvE/edit#gid=1688854817" target="_blank"><img src="img/tmh.svg" alt="PDF icon">LACTARIO EXTERNO</a></li></span>
+	        <li><span><a href="https://docs.google.com/spreadsheets/d/1-xFK9hp4Of009JESY_UsOiS9BdaxCVvE/edit#gid=615911642" target="_blank"><img src="img/tmh.svg" alt="PDF icon">QUIRÓFANO</a></li></span>
+	        <li><span><a href="https://docs.google.com/spreadsheets/d/1-xFK9hp4Of009JESY_UsOiS9BdaxCVvE/edit#gid=1968845873" target="_blank"><img src="img/tmh.svg" alt="PDF icon">CARRO DE PARO HOSP P3</a></li></span>
+	        <li><span><a href="https://docs.google.com/spreadsheets/d/1-xFK9hp4Of009JESY_UsOiS9BdaxCVvE/edit#gid=1284350696" target="_blank"><img src="img/tmh.svg" alt="PDF icon">CARRO DE PARO HOSP P4</a></li></span>
+	        <li><span><a href="https://docs.google.com/spreadsheets/d/1-xFK9hp4Of009JESY_UsOiS9BdaxCVvE/edit#gid=2004836138" target="_blank"><img src="img/tmh.svg" alt="PDF icon">CARRO DE PARO HOSP P5</a></li></span>
+	        <li><span><a href="https://docs.google.com/spreadsheets/d/1-xFK9hp4Of009JESY_UsOiS9BdaxCVvE/edit#gid=1195634846" target="_blank"><img src="img/tmh.svg" alt="PDF icon">UCI PEDIATRICA</a></li></span>
+	        <li><span><a href="https://docs.google.com/spreadsheets/d/1-xFK9hp4Of009JESY_UsOiS9BdaxCVvE/edit#gid=1603443393" target="_blank"><img src="img/tmh.svg" alt="PDF icon">CARRO DE PARO UCIP</a></li></span>
+	        <li><span><a href="https://docs.google.com/spreadsheets/d/1-xFK9hp4Of009JESY_UsOiS9BdaxCVvE/edit#gid=83538020" target="_blank"><img src="img/tmh.svg" alt="PDF icon">PLANTA DE AIRE</a></li></span>
 
 
-        </tr>
-        <tr>
-            <td><a href="https://docs.google.com/spreadsheets/d/1-xFK9hp4Of009JESY_UsOiS9BdaxCVvE/edit#gid=1603443393" target="_blank"><img src="Img/tucipcarro.png" alt="Imagen 10"></a></td>
-            <td><a href="https://docs.google.com/spreadsheets/d/1-xFK9hp4Of009JESY_UsOiS9BdaxCVvE/edit#gid=83538020" target="_blank"><img src="Img/tplantadeaire.png" alt="Imagen 11"></a></td>
-        </tr>
 
-    </center></table>
-    <br><br>
-<div>
+
+            
+
+
+
+
+
+
+
+
+
+       
+            <!-- podemos agregar más PDF copiando el codigo anterior y cambiando la ruta donde se encuentra el PDF-->
+        </ul></center>
+    <!--<div id="description-box" class="hidden"></div> -->
+    <script src="script.js"></script>
+</main>
+</body>
 <footer>
-    <center>&copy; Meintegral S.A.S - Todos los derechos reservados <br>
+    <center><br><br>
+        &copy; Meintegral S.A.S - Todos los derechos reservados <br>
         Desarrollado por Jhon Sebastian Mora Agudelo<br>
         Manizales - Caldas<br>
-        2023 - 2024
-        </center>
+        2023 - 2024 <br>
+    </center>
+    <br>
 </footer>
-</div>
+
 </html>
-</body>

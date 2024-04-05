@@ -1,24 +1,22 @@
-<!DOCTYPE html>
-<html lang="en">
+﻿<!DOCTYPE html>
+<html lang="es">
 <head>
     <link rel="shortcut icon" href="ico/impresora.ico">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="cache-control" content="no-store, no-cache, must-revalidate, max-age=0">
+    <meta http-equiv="pragma" content="no-cache">
     <meta http-equiv="expires" content="0">
-    <link rel="stylesheet" href="boostrap.css">
-    <link rel="stylesheet" href="pasarela.css">
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="stylemenu.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styles3.css">
+
+
+    <title>PACI | Inventarios</title>
     <script src="confirmacion.js" defer></script>
-
-    <title>PACI | Informativo</title>
-
 </head>
-<body>
-
+<body> 
           <div class="menu">
             <div class="area"></div><nav class="main-menu">
                 <ul>
@@ -58,8 +56,6 @@
                         </a>
                         
                     </li>
-                    
-                </li>
                 <li class="has-subnav">
                     <a href="videos.html">
                         <i class="fa fa-solid fa-video fa-2x"></i>
@@ -136,109 +132,42 @@
                 </ul>
             </nav>
         </div>
-
-    </center>
-    </div>
 <div id="caja-bloqueada">
         <header>
-            <img class="encabezado-fijo" src="img/Tittle-6.png"/>
+            <img class="encabezado-fijo" src="img/tittle-inventariosmeinte.png"/>
         </header>     
-        <br>
     </div> 
-    <center>
+<main>
 
-    <h2><b>SOCIALIZACIÓN FORMATOS DIGITALES</b></h2>
-    <h4 style="color: green;">Aplican a partir del 3 de Abril 2024</h4>
-    <div><iframe class="video-destacado" width="80%" height="80%" src="https://www.youtube.com/embed/mwURPYdgx94" title="Vídeo de agradecimiento Juan Martín - Meintegral" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-    <div> </center>
-        <center></center>
-        <style>
-            hr {
-              border: 0;
-              height: 1px;
-              background-color: #333;
-              margin: 20px 0; /* Espacio arriba y abajo de la línea */
-            }
-          </style>
-<hr>
-
-            <h2>Mas información:</h2><BR>
-
-             <p style="color: red;"> Los formatos socializados son de uso obligatorio y comienzan a ser válidos a partir del 3 de abril del presente año 2024</p><BR><BR><BR>
-
-            <em>-FORMATO DE REGISTRO DE MEDICAMENTOS 2024 <BR>
-            -FORMATO DE REGISTRO DE INSUMOS Y DISPOSITIVOS DE ENFERMERIA 2024<BR>
-            -FORMATO DE SOLICITUD DE INSUMOS DE PEDIDO DE ENFERMERIA 2024<BR>
-            -FÓRMULA MÉDICA DIGITAL 2024<BR><br></em>
-
-                Recuerden descargarlos en el Nuevo módudo de PACI de <a href="http://192.168.1.250/documentos-digitales.html">Documentos Digitales.</a> y dejarlos en sus respectivas carpetas de SOLICITUD DE PEDIDOS y FACTURACIÓN.
-
-                <hr>
+        <center>
+            <input type="text" id="search" placeholder="Buscar solicitud...">
+        </center>
+        <center><ul id="document-list">
+	        <li><span><a href="http://192.168.1.250:8080/inventario-sis/includes/_sesion/login.php" target="_blank" ><img src="Img/inv-sis-ico.png" alt="PDF icon">INVENTARIO<BR>SISTEMAS</a></li></span>
+            <li><span><a href="http://192.168.1.250:8080/inventario-bio/includes/_sesion/login.php" target="_blank" ><img src="Img/inv-bio-ico.png" alt="PDF icon">INVENTARIO<BR>BIOMÉDICA</a></li></span>
 
 
 
 
-          <!--ABRE TABLA DE CARRUSEL DE IMAGENES
 
-      <div class="container-carousel">
-        <div id="theCarousel" class="carousel slide" data-ride="carousel">
 
-          <ol class="carousel-indicators">
-            <li data-target="#theCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#theCarousel" data-slide-to="1"></li>
-            <li data-target="#theCarousel" data-slide-to="2"></li>
-            <li data-target="#theCarousel" data-slide-to="3"></li>
-            
-          </ol>
-      
-          <div class="carousel-inner" role="listbox">
-            <div class="item active">
-              <img src="img/caidassiso.png" alt="Ilustracion" idth="600" height="424"> 
-               <div class="carousel-caption d-none d-md-block">
-        </div>
-      </div>
-            <div class="item">
-              <img src="img/recomendaciones lesiones.png" alt="fotografia" idth="600" height="424"> 
-               <div class="carousel-caption d-none d-md-block">
-        </div>
-            </div>
-      
-           <div class="item">
-              <img src="img/pausasactivas.png" alt="pintura" idth="600" height="424">
-               <div class="carousel-caption d-none d-md-block">
-        </div>
-            </div>
-             <div class="item">
-              <img src="img/pausasactivas.png" alt="diseno" idth="600" height="424"> 
-               <div class="carousel-caption d-none d-md-block">
-        </div>
-            </div>
-      
-      
-            <a class="left carousel-control" href="#theCarousel" role="button" data-slide="prev">
-              <span class="sr-only">anterior</span>
-              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="glyphicon glyphicon-chevron-left" viewBox="0 0 16 16">
-                <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0"/>
-              </svg>
-            </a>
-            <a class="right carousel-control" href="#theCarousel" role="button" data-slide="next">
-              <span class="sr-only">siguiente</span>
-              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="glyphicon glyphicon-chevron-right" viewBox="0 0 16 16">
-                <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/>
-              </svg>
-            </a>
-        </div>
-      </div>
 
-CIERRA TABLA DE CARRUSEL DE IMAGENES -->
+        </ul></center>
+    </body>
+        
 
+    <!--<div id="description-box" class="hidden"></div> -->
+    <script src="script.js"></script>
+</main>
 </body>
-<br><br>
 <footer>
-    <center>&copy; Meintegral S.A.S - Todos los derechos reservados <br>
+    <center><br><br>
+        &copy; Meintegral S.A.S - Todos los derechos reservados <br>
         Desarrollado por Jhon Sebastian Mora Agudelo<br>
         Manizales - Caldas<br>
-        2023 - 2024
-        </center>
+        2023 - 2024 <br>
+    </center>
+    <br>
 </footer>
+
 </html>

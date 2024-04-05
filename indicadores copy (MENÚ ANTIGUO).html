@@ -11,134 +11,33 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
      crossorigin="anonymous" referrerpolicy="no-referrer" />
-
      <link rel="stylesheet" href="StyleSection.css">
-    <link rel="stylesheet" href="styles3.css">
-    <title>PACI | Indicadores</title>
+    <link rel="stylesheet" href="styles.css">
+    <title>Plataforma PACI</title>
     <script src="confirmacion.js" defer></script>
 </head>
 <body> 
     <div class="menu">
-        <div class="area"></div><nav class="main-menu">
+        <img src="Img/logo_paci.png" alt="Logo" id="logo" style="cursor: pointer;" onclick="window.location.href = 'index.html';"> <!-- Agrega tu logo aquí -->
+        <center>
+            <hr>
+        </center>
+        <center>
             <ul>
-                <li>
-                    <a href="inicio.html">
-                        <i class="fa fa-home fa-2x"></i>
-                        <span class="nav-text">
-                           Inicio
-                        </span>
-                    </a>
-                  
-                </li>
-                <li class="has-subnav">
-                    <a href="accesos-meintegral.html">
-                        <i class="fa fa-solid fa-globe fa-2x"></i>
-                        <span class="nav-text">
-                            Accesos Meintegral
-                        </span>
-                    </a>
-                    
-                </li>
-                <li class="has-subnav">
-                    <a href="index.html">
-                        <i class="fa fa-solid fa-print fa-2x"></i>
-                        <span class="nav-text">
-                            Documentos Imprimibles
-                        </span>
-                    </a>
-                    
-                </li>
-                <li class="has-subnav">
-                    <a href="documentos-digitales.html">
-                        <i class="fa fa-solid fa-download fa-2x"></i>
-                        <span class="nav-text">
-                            Documentos Digitales
-                        </span>
-                    </a>
-                    
-                </li>
-            <li class="has-subnav">
-                <a href="videos.html">
-                    <i class="fa fa-solid fa-video fa-2x"></i>
-                    <span class="nav-text">
-                        Videos Institucionales
-                    </span>
-                </a>
-                
-            </li>
-                <li class="has-subnav">
-                    <a href="termohigrometros.html">
-                        <i class="fa fa-temperature-high fa-2x"></i>
-                        <span class="nav-text">
-                            Registro Termohigrometros
-                        </span>
-                    </a>
-                    
-                </li>
-                <li class="has-subnav">
-                    <a href="extensiones.html">
-                        <i class="fa fa-solid fa-phone fa-2x"></i>
-                        <span class="nav-text">
-                            Extensiones Telefónicas
-                        </span>
-                    </a>
-                   
-                </li>
-                <li>
-                    <a href="disponibilidad.html">
-                        <i class="fa fa-address-book fa-2x" aria-hidden="true"></i>
-                        <span class="nav-text">
-                            Disponibilidades
-                        </span>
-                    </a>
-                </li>
-                <li>
-                    <a href="indicadores.html">
-                        <i class="fa fa-solid fa-chart-line fa-2x"></i>
-                        <span class="nav-text">
-                           Indicadores de Calidad
-                        </span>
-                    </a>
-                </li>
-
-                <li>
-                   <a href="Talentohumano.html">
-                    <i class="fa fa-users fa-2x" aria-hidden="true"></i>
-                        <span class="nav-text">
-                            Talento Humano
-                        </span>
-                    </a>
-                </li>
-                <li>
-                    <a class="confirmarSalida" href="inventarios.html">
-                      <i class="fa fa-cogs fa-2x"></i>
-                       <span class="nav-text">
-                           Inventarios
-                       </span>
-                   </a>
-
-                  </li>  
-
+                <li><a id="menua" href="inicio.html">🏠 Inicio</a></li>
+                <li><a id="menua" href="index.html">Documentos Imprimibles</a></li>
+                <li><a id="menua" href="termohigrometros.html">Registro Termohigrometros</a></li>
+                <li><a id="menua" href="extensiones.html">Extensiones Telefónicas</a></li>
+                <li><a id="menua" href="disponibilidad.html">Disponibilidades</a></li>
+                <li><a id="menua" href="indicadores.html">Indicadores</a></li>
+                <li><a id="menua" class="confirmarSalida" href="http://192.168.1.150/ProyectoBaseDatos/includes/_sesion/login.php">Inventarios</a></li>
+                <li><a id="menub" href="reportes.html">⚠️ Módulo de Reportes</a></li>
             </ul>
-
-            <ul class="logout">
-                <li>
-                    <a href="reportes.html">
-                        <i ID="triangle" class="fa fa-exclamation-triangle fa-2x" aria-hidden="true"></i>
-                          <span class="nav-text">
-                              Módulo de reportes
-                          </span>
-                      </a>
-                   </li>
-            </ul>
-        </nav>
+        </center>
     </div>
-    <div id="caja-bloqueada">
-        <header>
-            <img class="encabezado-fijo" src="img/Tittle-7.png"/>
-        </header>     
-        <br>
-    </div>     
+    <header>
+        <img id="titulo" src="img/Tittle-7.png"/>
+    </header>      
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="confirmacion.js" ></script>
 
@@ -217,10 +116,6 @@
             <a href="https://docs.google.com/spreadsheets/d/1sjD1YAnGJjbkJ769TQdsEEGSB5jtbgvwTgErG4GLZEs/edit#gid=1031124675" target="_blank" class="location" onclick="reportar('Laboratorio Clínico - Ubicación 1')">Registro de indicadores de gestión pretransfusional</a>
             <a href="https://docs.google.com/spreadsheets/d/1KY336h4hMrpl5Fz4sI1jO6XpUCA_asQ-5Pbpnw0DWjw/edit#gid=2128265347" target="_blank" class="location" onclick="reportar('Imágenes Diagnósticas - Ubicación 2')">Registro de indicadores de laboratorio clínico</a>
             <a href="https://docs.google.com/spreadsheets/d/1xKJHlObwhSaRH1J-RzSUYH--_5bHUB7eLGZXDg0p5Ng/edit#gid=833617923" target="_blank" class="location" onclick="reportar('Imágenes Diagnósticas - Ubicación 3')">Registro de indicadores de seguridad del paciente</a>
-            <a href="https://docs.google.com/spreadsheets/d/1E8s5ONylxe8CpNwBYBKJqBLT0547WtV0gzT-iJLRuaQ/edit#gid=0" target="_blank" class="location" onclick="reportar('Imágenes Diagnósticas - Ubicación 4')">Registro de indicadores de microbiología</a>
-            <a href="https://docs.google.com/spreadsheets/d/1lP9cmh2d_skGXYmbTV5O3fDlv4ZXPoN1/edit?usp=drive_web&ouid=106220544488854395744&rtpof=true" target="_blank" class="location" onclick="reportar('Imágenes Diagnósticas - Ubicación 5')">Registro de indicadores de laboratorio para tuberculosis</a>
-
-
             <!-- Agrega más enlaces según tus necesidades -->
         </div>
     </div>
@@ -229,7 +124,7 @@
         <h2 onclick="toggleLocations('referencia_contrareferencia')">Referencia y Contrarreferencia</h2>
         <div id="referencia_contrareferencia" class="locations">
             <a href="https://drive.google.com/drive/folders/1TlxyD4RDZtu2T9Mj36T9TKW5tLChjvp6?usp=sharing" target="_blank" class="location" onclick="reportar('Referencia y Contrarreferencia - Ubicación 1')">Referencia y Contrarreferencia Neonatal - Pediátrico</a>
-            <a href="https://docs.google.com/spreadsheets/d/1lP9cmh2d_skGXYmbTV5O3fDlv4ZXPoN1/edit#gid=772515060" target="_blank" class="location" onclick="reportar('Referencia y Contrarreferencia - Ubicación 2')">Registro y monitorización de traslado de ambulancia</a>
+            <a href="https://docs.google.com/spreadsheets/d/17e-xfTr97M8qlmQGolOzYyJIqKY0TWHkpwcxM8ZF62k/edit?usp=drive_link" target="_blank" class="location" onclick="reportar('Referencia y Contrarreferencia - Ubicación 2')">Registro y monitorización de traslado de ambulancia</a>
             <!-- Agrega más enlaces según tus necesidades -->
         </div>
     </div>
