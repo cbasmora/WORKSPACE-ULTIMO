@@ -1,4 +1,4 @@
-// Archivo confirmacion.js
+// Archivo js/confirmacion.js
 function confirmarSalida(event) {
     // Verifica si el enlace clicado tiene la clase "confirmarSalida"
     if (event.target.classList.contains("confirmarSalida")) {

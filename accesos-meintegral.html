@@ -13,146 +13,26 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="styles3.css">
+    <link rel="stylesheet" href="css/styles.css">
 
 
     <title>PACI | Accesos Meintegral</title>
-    <script src="confirmacion.js" defer></script>
+    <script src="js/confirmacion.js" defer></script>
 </head>
-
+<script>
+    function loadMenu() {
+        fetch('menu.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('menu').innerHTML = data;
+            })
+            .catch(error => console.error('Error cargando el menú:', error));
+    }
+    window.onload = loadMenu;
+</script>
+    <div id="menu"></div>
 <body>
-    <div class="menu">
-        <div class="area"></div>
-        <nav class="main-menu">
-            <ul>
-                <li>
-                    <a href="inicio.html">
-                        <i class="fa fa-home fa-2x"></i>
-                        <span class="nav-text">
-                            Inicio
-                        </span>
-                    </a>
-
-                </li>
-                <li class="has-subnav">
-                    <a href="accesos-meintegral.html">
-                        <i class="fa fa-solid fa-globe fa-2x"></i>
-                        <span class="nav-text">
-                            Accesos Meintegral
-                        </span>
-                    </a>
-
-                </li>
-                <li class="has-subnav">
-                    <a href="index.html">
-                        <i class="fa fa-solid fa-print fa-2x"></i>
-                        <span class="nav-text">
-                            Documentos Imprimibles
-                        </span>
-                    </a>
-
-                </li>
-                <li class="has-subnav">
-                    <a href="documentos-digitales.html">
-                        <i class="fa fa-solid fa-download fa-2x"></i>
-                        <span class="nav-text">
-                            Documentos Digitales
-                        </span>
-                    </a>
-
-                </li>
-                </li>
-                <li class="has-subnav">
-                    <a href="videos.html">
-                        <i class="fa fa-solid fa-video fa-2x"></i>
-                        <span class="nav-text">
-                            Videos Institucionales
-                        </span>
-                    </a>
-
-                </li>
-                <li class="has-subnav">
-                    <a href="termohigrometros.html">
-                        <i class="fa fa-temperature-high fa-2x"></i>
-                        <span class="nav-text">
-                            Registro Termohigrometros
-                        </span>
-                    </a>
-
-                </li>
-                <li class="has-subnav">
-                    <a href="extensiones.html">
-                        <i class="fa fa-solid fa-phone fa-2x"></i>
-                        <span class="nav-text">
-                            Extensiones Telefónicas
-                        </span>
-                    </a>
-
-                </li>
-                <li>
-                    <a href="disponibilidad.html">
-                        <i class="fa fa-address-book fa-2x" aria-hidden="true"></i>
-                        <span class="nav-text">
-                            Disponibilidades
-                        </span>
-                    </a>
-                </li>
-                <li>
-                    <a href="indicadores.html">
-                        <i class="fa fa-solid fa-chart-line fa-2x"></i>
-                        <span class="nav-text">
-                            Indicadores de Calidad
-                        </span>
-                    </a>
-                </li>
-                <li>
-                    <a href="suficiencia-equipos.html">
-                        <i class="fa fa-solid fa-laptop-medical fa-2x"></i>
-                        <span class="nav-text">
-                           Suficiencia de Equipos
-                        </span>
-                    </a>
-                </li>
-                <li>
-                    <a href="suficiencia-infraestructura.html">
-                        <i class="fa fa-hospital fa-laptop-medical fa-2x"></i>
-                        <span class="nav-text">
-                           Infraestructura Hospitalaria
-                        </span>
-                    </a>
-                </li>
-                <li>
-                    <a href="Talentohumano.html">
-                        <i class="fa fa-users fa-2x" aria-hidden="true"></i>
-                        <span class="nav-text">
-                            Talento Humano
-                        </span>
-                    </a>
-                </li>
-                <li>
-                    <a class="confirmarSalida" href="inventarios.html">
-                        <i class="fa fa-cogs fa-2x"></i>
-                        <span class="nav-text">
-                            Inventarios
-                        </span>
-                    </a>
-
-                </li>
-
-            </ul>
-
-            <ul class="logout">
-                <li>
-                    <a href="reportes.html">
-                        <i ID="triangle" class="fa fa-exclamation-triangle fa-2x" aria-hidden="true"></i>
-                        <span class="nav-text">
-                            Módulo de reportes
-                        </span>
-                    </a>
-                </li>
-            </ul>
-        </nav>
-    </div>
+    
     <div id="caja-bloqueada">
         <header>
             <img class="encabezado-fijo" src="img/tittle-am.gif" />
@@ -200,7 +80,7 @@
             </ul>
         </center>
         <!--<div id="description-box" class="hidden"></div> -->
-        <script src="script.js"></script>
+        <script src="js/search.js"></script>
     </main>
 </body>
 <footer>

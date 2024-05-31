@@ -6,157 +6,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="expires" content="0">
-    <link rel="stylesheet" href="boostrap.css">
-    <link rel="stylesheet" href="pasarela.css">
+    <link rel="stylesheet" href="css/boostrap.css">
+    <link rel="stylesheet" href="css/pasarela.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="styles3.css">
-    <script src="confirmacion.js" defer></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/confirmacion.js" defer></script>
 
     <title>PACI | Informativo</title>
 
 </head>
-
+<script>
+    function loadMenu() {
+        fetch('menu.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('menu').innerHTML = data;
+            })
+            .catch(error => console.error('Error cargando el menú:', error));
+    }
+    window.onload = loadMenu;
+</script>
+    <div id="menu"></div>
 <body>
-
-    <div class="menu">
-        <div class="area"></div>
-        <nav class="main-menu">
-            <ul>
-                <li>
-                    <a href="inicio.html">
-                        <i class="fa fa-home fa-2x"></i>
-                        <span class="nav-text">
-                            Inicio
-                        </span>
-                    </a>
-
-                </li>
-                <li class="has-subnav">
-                    <a href="accesos-meintegral.html">
-                        <i class="fa fa-solid fa-globe fa-2x"></i>
-                        <span class="nav-text">
-                            Accesos Meintegral
-                        </span>
-                    </a>
-
-                </li>
-                <li class="has-subnav">
-                    <a href="index.html">
-                        <i class="fa fa-solid fa-print fa-2x"></i>
-                        <span class="nav-text">
-                            Documentos Imprimibles
-                        </span>
-                    </a>
-
-                </li>
-                <li class="has-subnav">
-                    <a href="documentos-digitales.html">
-                        <i class="fa fa-solid fa-download fa-2x"></i>
-                        <span class="nav-text">
-                            Documentos Digitales
-                        </span>
-                    </a>
-
-                </li>
-
-                </li>
-                <li class="has-subnav">
-                    <a href="videos.html">
-                        <i class="fa fa-solid fa-video fa-2x"></i>
-                        <span class="nav-text">
-                            Videos Institucionales
-                        </span>
-                    </a>
-
-                </li>
-                <li class="has-subnav">
-                    <a href="termohigrometros.html">
-                        <i class="fa fa-temperature-high fa-2x"></i>
-                        <span class="nav-text">
-                            Registro Termohigrometros
-                        </span>
-                    </a>
-
-                </li>
-                <li class="has-subnav">
-                    <a href="extensiones.html">
-                        <i class="fa fa-solid fa-phone fa-2x"></i>
-                        <span class="nav-text">
-                            Extensiones Telefónicas
-                        </span>
-                    </a>
-
-                </li>
-                <li>
-                    <a href="disponibilidad.html">
-                        <i class="fa fa-address-book fa-2x" aria-hidden="true"></i>
-                        <span class="nav-text">
-                            Disponibilidades
-                        </span>
-                    </a>
-                </li>
-                <li>
-                    <a href="indicadores.html">
-                        <i class="fa fa-solid fa-chart-line fa-2x"></i>
-                        <span class="nav-text">
-                            Indicadores de Calidad
-                        </span>
-                    </a>
-                </li>
-                <li>
-                    <a href="suficiencia-equipos.html">
-                        <i class="fa fa-solid fa-laptop-medical fa-2x"></i>
-                        <span class="nav-text">
-                           Suficiencia de Equipos
-                        </span>
-                    </a>
-                </li>
-                <li>
-                    <a href="suficiencia-infraestructura.html">
-                        <i class="fa fa-hospital fa-laptop-medical fa-2x"></i>
-                        <span class="nav-text">
-                           Infraestructura Hospitalaria
-                        </span>
-                    </a>
-                </li>
-                <li>
-                    <a href="Talentohumano.html">
-                        <i class="fa fa-users fa-2x" aria-hidden="true"></i>
-                        <span class="nav-text">
-                            Talento Humano
-                        </span>
-                    </a>
-                </li>
-                <li>
-                    <a class="confirmarSalida" href="inventarios.html">
-                        <i class="fa fa-cogs fa-2x"></i>
-                        <span class="nav-text">
-                            Inventarios
-                        </span>
-                    </a>
-
-                </li>
-
-            </ul>
-
-            <ul class="logout">
-                <li>
-                    <a href="reportes.html">
-                        <i ID="triangle" class="fa fa-exclamation-triangle fa-2x" aria-hidden="true"></i>
-                        <span class="nav-text">
-                            Módulo de reportes
-                        </span>
-                    </a>
-                </li>
-            </ul>
-        </nav>
-    </div>
-
     </center>
     </div>
     <div id="caja-bloqueada">
@@ -256,41 +132,43 @@
     </center>
 
     <b> IMPORTANTE:</b><br><BR>
-        En el módulo de vídeos encuentras todos los tutoriales de funcionamiento de citisalud WEB <a
+    En el módulo de vídeos encuentras todos los tutoriales de funcionamiento de citisalud WEB <a
         href="http://192.168.1.250/videos.html">Click aquí para ver tutoriales</a><br><br><br>
-        Beneficios ACTIVOS de la nueva actualización:<BR><BR>
+    Beneficios ACTIVOS de la nueva actualización:<BR><BR>
 
-            ✅ Mayor estabilidad del sistema al estar alojado en un servidor más potente.<BR>
-            ✅ Posibilidad de realizar ordenamientos de procedimientos terapéuticos y diagnósticos directamente en Citisalud.<BR>
-            ✅Solicitar y responder interconsultas.<BR>
-            ✅Seguimiento del patrón de crecimiento y desarrollo en tiempo real con gráficas.<BR><BR>
+    ✅ Mayor estabilidad del sistema al estar alojado en un servidor más potente.<BR>
+    ✅ Posibilidad de realizar ordenamientos de procedimientos terapéuticos y diagnósticos directamente en Citisalud.<BR>
+    ✅Solicitar y responder interconsultas.<BR>
+    ✅Seguimiento del patrón de crecimiento y desarrollo en tiempo real con gráficas.<BR><BR>
 
-        Además, esta actualización sienta las bases para futuros beneficios, como la integración de laboratorio e imagenología, formulación médica y la capacidad de realizar informes quirúrgicos y programar cirugías.
-  
-            <style>
-                hr {
-                  border: 0;
-                  height: 1px;
-                  background-color: #333;
-                  margin: 20px 0; /* Espacio arriba y abajo de la línea */
-                }
-              </style>
-            <hr>
-            <BR>
-        <h4><b>Mas información LHC PROCESO TRANSFUSIONAL: <em>17/04/2024</em></b></h4><BR>
+    Además, esta actualización sienta las bases para futuros beneficios, como la integración de laboratorio e
+    imagenología, formulación médica y la capacidad de realizar informes quirúrgicos y programar cirugías.
 
-        <p style="color: red;"> A partir de HOY 17 de Abril la lista de chequeo del proceso transfusional se debería
-            diligenciar de forma digital este proceso inicia en laboratorio clínico.</p><BR><BR><BR>
-        </center>
+    <style>
+        hr {
+            border: 0;
+            height: 1px;
+            background-color: #333;
+            margin: 20px 0;
+            /* Espacio arriba y abajo de la línea */
+        }
+    </style>
+    <hr>
+    <BR>
+    <h4><b>Mas información LHC PROCESO TRANSFUSIONAL: <em>17/04/2024</em></b></h4><BR>
 
-        <b> PARA TENER EN CUENTA:</b><br><BR>
+    <p style="color: red;"> A partir de HOY 17 de Abril la lista de chequeo del proceso transfusional se debería
+        diligenciar de forma digital este proceso inicia en laboratorio clínico.</p><BR><BR><BR>
+    </center>
 
-        <em>1. la lista de chequeo se descarga en el módulo de <a
-                href="http://192.168.1.250/documentos-digitales.html">documentos digitales</a> por parte del laboratorio
-            clínico. <BR>
-            2. La lista quedará en la carpeta de cada paciente.<BR>
-            3. Continuar la trazabilidad de la lista en el servicio asistencial que corresponda.<BR><br>
-<hr>
+    <b> PARA TENER EN CUENTA:</b><br><BR>
+
+    <em>1. la lista de chequeo se descarga en el módulo de <a
+            href="http://192.168.1.250/documentos-digitales.html">documentos digitales</a> por parte del laboratorio
+        clínico. <BR>
+        2. La lista quedará en la carpeta de cada paciente.<BR>
+        3. Continuar la trazabilidad de la lista en el servicio asistencial que corresponda.<BR><br>
+        <hr>
 </body>
 <br><br>
 <footer>
