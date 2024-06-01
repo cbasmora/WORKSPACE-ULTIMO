@@ -29,7 +29,8 @@
     }
     window.onload = loadMenu;
 </script>
-    <div id="menu"></div>
+<div id="menu"></div>
+
 <body>
 
     <div id="caja-bloqueada">
@@ -108,13 +109,9 @@
                 <li><span><a href="pdfs/FORMATO CONTROL DE ROPA HOSPITALARIA.pdf" target="_blank"
                             data-description="Descripción del documento pendiente por actualizar"><img src="img/pdf.svg"
                                 alt="PDF icon">FORMATO CONTROL DE ROPA HOSPITALARIA</a></li></span>
-               <li><span><a href="pdfs/FORMATO CAPACITACION A USUARIOS Y FAMILIA.pdf" target="_blank"
+                <li><span><a href="pdfs/FORMATO CAPACITACION A USUARIOS Y FAMILIA.pdf" target="_blank"
                             data-description="Descripción del documento pendiente por actualizar"><img src="img/pdf.svg"
                                 alt="PDF icon">FORMATO CAPACITACIÓN A USUARIOS Y A FAMILIA</a></li></span>
-
-
-
-
                 <!-- podemos agregar más PDF copiando el codigo anterior y cambiando la ruta donde se encuentra el PDF-->
             </ul>
         </center>
@@ -123,13 +120,17 @@
     </main>
 </body>
 <footer>
-    <center><br><br>
-        &copy; Meintegral S.A.S - Todos los derechos reservados <br>
-        Desarrollado por Jhon Sebastian Mora Agudelo<br>
-        Manizales - Caldas<br>
-        2023 - 2024 <br>
-    </center>
-    <br>
+    <script>
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer').innerHTML = data;
+            })
+            .catch(error => console.error('Error cargando el footer:', error));
+
+        window.onload = loadContent;
+    </script>
+    <div id="footer"></div>
 </footer>
 
 </html>

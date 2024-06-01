@@ -184,15 +184,17 @@ document.addEventListener('DOMContentLoaded', function() {
         });
             </script>
 </body>
-</html>
-
-</body>
 <footer>
-    <center>
-        &copy; Meintegral S.A.S - Todos los derechos reservados <br>
-        Desarrollado por Jhon Sebastian Mora Agudelo<br>
-        Manizales - Caldas<br>
-        2023 - 2024 <br>
-    </center>
+    <script>
+            fetch('footer.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('footer').innerHTML = data;
+                })
+                .catch(error => console.error('Error cargando el footer:', error));
+        
+        window.onload = loadContent;
+    </script>
+        <div id="footer"></div>
 </footer>
 </html>

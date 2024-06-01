@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <link rel="shortcut icon" href="ico/impresora.ico">
     <meta charset="UTF-8">
@@ -9,7 +10,9 @@
     <meta http-equiv="expires" content="0">
 
     <link rel="stylesheet" href="stylemenu.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/styles.css">
 
     <title>PACI | Disponibilidades</title>
@@ -26,61 +29,75 @@
     }
     window.onload = loadMenu;
 </script>
-    <div id="menu"></div>
-<body> 
-<div id="caja-bloqueada">
+<div id="menu"></div>
+
+<body>
+    <div id="caja-bloqueada">
         <header>
-            <img class="encabezado-fijo" src="img/Tittle-5.png"/>
-        </header>     
-    </div> 
-<main>
+            <img class="encabezado-fijo" src="img/Tittle-5.png" />
+        </header>
+    </div>
+    <main>
         <center>
             <input type="text" id="search" placeholder="Buscar disponibilidad...">
         </center>
-        <center><ul id="document-list">
-	        <li><span><a href="https://docs.google.com/spreadsheets/d/1zqGX5b9GfypnD9t-Q6np0E-lMDFM2E4h/edit#gid=996762727" target="_blank"><img src="Img/quirofanotp.png" alt="imágen sobre quirofano">SALA DE QUIRÓFANO</a></li></span>
-	        <li><span><a href="https://docs.google.com/spreadsheets/d/16-t7ysc_DQuimaG-UbtbX6Nao_LQpf5M/edit#gid=2129396025" target="_blank"><img src="img/medicos generalestp.png" alt="PDF icon">ESPECIALISTAS</a></li></span>
-	        <li><span><a href="https://docs.google.com/spreadsheets/d/14hM7_-5_6cAR6ro0-5QdH7pdJ2bJXmFa/edit#gid=1410790002" target="_blank"><img src="img/enfermeriatp.png" alt="PDF icon">ENFERMERÍA</a></li></span>
-	        <li><span><a href="https://docs.google.com/spreadsheets/d/18OaiPpP-M3WY2_HmzWQuJMZbCEL7HMRqPmwaw5SpAYE/edit#gid=0" target="_blank"><img src="img/serviciosgeneralestp.png" alt="PDF icon">SERVICIOS GENERALES</a></li></span>
-	        <li><span><a href="https://docs.google.com/spreadsheets/d/1R26bTgdX2uBZnfwk0GCQzw8ZY7pcLOel/edit#gid=346843132" target="_blank"><img src="img/Laboratoriotp.png" alt="PDF icon">LABORATORIO</a></li></span>
-	        <li><span><a href="https://docs.google.com/spreadsheets/d/1b85NmUXChbfSuotSj-3fDf2P7qcCv-kcCnk0QJm0pbM/edit#gid=0" target="_blank"><img src="img/medicostp.png" alt="PDF icon">MÉDICOS PEDIATRIAS</a></li></span>
-	        <li><span><a href="https://docs.google.com/spreadsheets/d/1PgJYMQZNdKRiYhKHIns0_htnb6WYHU0Y/edit#gid=1883294092" target="_blank"><img src="img/orientadortp.png" alt="PDF icon">ORIENTADORES</a></li></span>
-	        <li><span><a href="https://docs.google.com/spreadsheets/d/1TVh6yn7urnAGVO27Yfqqb1y5YEpHycii/edit#gid=350732255" target="_blank"><img src="img/farmaciatp.png" alt="PDF icon">SERVICIO FARMACÉUTICO</a></li></span>
-	        <li><span><a href="https://docs.google.com/spreadsheets/d/1rBQY3f8rB5NYqzkHM15dCGXEsLqxenbsJL87uQ9ZsKk/edit#gid=635001685" target="_blank"><img src="img/terapiaresptp.png" alt="PDF icon">TERAPIA RESPIRATORIA</a></li></span>
-	        <li><span><a href="https://docs.google.com/spreadsheets/d/1_cOCTSPH4l8BAoReUTrEVO21UIe2SmxEubhhB7ySGHU/edit#gid=0" target="_blank"><img src="img/biomedicotp.png" alt="PDF icon">ÁREA BIOMÉDICA</a></li></span>
-	        <li><span><a href="https://docs.google.com/spreadsheets/d/1zanZj2gpni90LdKjeTXjOb9jFftCvq1b523MZ_4xAzM/edit#gid=351723304" target="_blank"><img src="img/cirugiapediatricatp.png" alt="PDF icon">CIRUGÍA PEDIÁTRICA</a></li></span>
-	        <li><span><a href="https://docs.google.com/spreadsheets/d/1S_Kaop1IEMZsZNKHXEqzujeNUsUT_fYb/edit?usp=sharing&ouid=100383498219838307806&rtpof=true&sd=true" target="_blank"><img src="img/rayosxtp.png" alt="PDF icon">PERSONAL RAYOS X</a></li></span>
-	        <li><span><a href="https://docs.google.com/spreadsheets/d/1lTQIv-Dd1xJEYGSnN9_NTdihcfMuTqf9/edit#gid=1711211492" target="_blank"><img src="img/referenciatp.png" alt="PDF icon">REFERENCIA/AUTORIZACIONES</a></li></span>
-	        <li><span><a href="https://docs.google.com/spreadsheets/d/1NKyOhgg68gOrQEsnJH9k6MB0vmzVM7AE/edit#gid=1865074366" target="_blank"><img src="img/psicotp.png" alt="PDF icon">PSICOLOGÍA</a></li></span>
-
-
-
-
-            
-
-
-
-
-
-
-
-
-
-       
-            <!-- podemos agregar más PDF copiando el codigo anterior y cambiando la ruta donde se encuentra el PDF-->
-        </ul></center>
-    <!--<div id="description-box" class="hidden"></div> -->
-    <script src="js/search.js"></script>
-</main>
+        <center>
+            <ul id="document-list">
+                <li><span><a href="https://docs.google.com/spreadsheets/d/1zqGX5b9GfypnD9t-Q6np0E-lMDFM2E4h/edit#gid=996762727"
+                            target="_blank"><img src="Img/quirofanotp.png" alt="imágen sobre quirofano">SALA DE
+                            QUIRÓFANO</a></li></span>
+                <li><span><a href="https://docs.google.com/spreadsheets/d/16-t7ysc_DQuimaG-UbtbX6Nao_LQpf5M/edit#gid=2129396025"
+                            target="_blank"><img src="img/medicos generalestp.png" alt="PDF icon">ESPECIALISTAS</a></li>
+                </span>
+                <li><span><a href="https://docs.google.com/spreadsheets/d/14hM7_-5_6cAR6ro0-5QdH7pdJ2bJXmFa/edit#gid=1410790002"
+                            target="_blank"><img src="img/enfermeriatp.png" alt="PDF icon">ENFERMERÍA</a></li></span>
+                <li><span><a href="https://docs.google.com/spreadsheets/d/18OaiPpP-M3WY2_HmzWQuJMZbCEL7HMRqPmwaw5SpAYE/edit#gid=0"
+                            target="_blank"><img src="img/serviciosgeneralestp.png" alt="PDF icon">SERVICIOS
+                            GENERALES</a></li></span>
+                <li><span><a href="https://docs.google.com/spreadsheets/d/1R26bTgdX2uBZnfwk0GCQzw8ZY7pcLOel/edit#gid=346843132"
+                            target="_blank"><img src="img/Laboratoriotp.png" alt="PDF icon">LABORATORIO</a></li></span>
+                <li><span><a href="https://docs.google.com/spreadsheets/d/1b85NmUXChbfSuotSj-3fDf2P7qcCv-kcCnk0QJm0pbM/edit#gid=0"
+                            target="_blank"><img src="img/medicostp.png" alt="PDF icon">MÉDICOS PEDIATRIAS</a></li>
+                </span>
+                <li><span><a href="https://docs.google.com/spreadsheets/d/1PgJYMQZNdKRiYhKHIns0_htnb6WYHU0Y/edit#gid=1883294092"
+                            target="_blank"><img src="img/orientadortp.png" alt="PDF icon">ORIENTADORES</a></li></span>
+                <li><span><a href="https://docs.google.com/spreadsheets/d/1TVh6yn7urnAGVO27Yfqqb1y5YEpHycii/edit#gid=350732255"
+                            target="_blank"><img src="img/farmaciatp.png" alt="PDF icon">SERVICIO FARMACÉUTICO</a></li>
+                </span>
+                <li><span><a href="https://docs.google.com/spreadsheets/d/1rBQY3f8rB5NYqzkHM15dCGXEsLqxenbsJL87uQ9ZsKk/edit#gid=635001685"
+                            target="_blank"><img src="img/terapiaresptp.png" alt="PDF icon">TERAPIA RESPIRATORIA</a>
+                </li></span>
+                <li><span><a href="https://docs.google.com/spreadsheets/d/1_cOCTSPH4l8BAoReUTrEVO21UIe2SmxEubhhB7ySGHU/edit#gid=0"
+                            target="_blank"><img src="img/biomedicotp.png" alt="PDF icon">ÁREA BIOMÉDICA</a></li></span>
+                <li><span><a href="https://docs.google.com/spreadsheets/d/1zanZj2gpni90LdKjeTXjOb9jFftCvq1b523MZ_4xAzM/edit#gid=351723304"
+                            target="_blank"><img src="img/cirugiapediatricatp.png" alt="PDF icon">CIRUGÍA PEDIÁTRICA</a>
+                </li></span>
+                <li><span><a href="https://docs.google.com/spreadsheets/d/1S_Kaop1IEMZsZNKHXEqzujeNUsUT_fYb/edit?usp=sharing&ouid=100383498219838307806&rtpof=true&sd=true"
+                            target="_blank"><img src="img/rayosxtp.png" alt="PDF icon">PERSONAL RAYOS X</a></li></span>
+                <li><span><a href="https://docs.google.com/spreadsheets/d/1lTQIv-Dd1xJEYGSnN9_NTdihcfMuTqf9/edit#gid=1711211492"
+                            target="_blank"><img src="img/referenciatp.png" alt="PDF icon">REFERENCIA/AUTORIZACIONES</a>
+                </li></span>
+                <li><span><a href="https://docs.google.com/spreadsheets/d/1NKyOhgg68gOrQEsnJH9k6MB0vmzVM7AE/edit#gid=1865074366"
+                            target="_blank"><img src="img/psicotp.png" alt="PDF icon">PSICOLOGÍA</a></li></span>
+                <!-- podemos agregar más PDF copiando el codigo anterior y cambiando la ruta donde se encuentra el PDF-->
+            </ul>
+        </center>
+        <!--<div id="description-box" class="hidden"></div> -->
+        <script src="js/search.js"></script>
+    </main>
 </body>
 <footer>
-    <center><br><br>
-        &copy; Meintegral S.A.S - Todos los derechos reservados <br>
-        Desarrollado por Jhon Sebastian Mora Agudelo<br>
-        Manizales - Caldas<br>
-        2023 - 2024 <br>
-    </center>
-    <br>
+    <script>
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer').innerHTML = data;
+            })
+            .catch(error => console.error('Error cargando el footer:', error));
+
+        window.onload = loadContent;
+    </script>
+    <div id="footer"></div>
 </footer>
 
 </html>
