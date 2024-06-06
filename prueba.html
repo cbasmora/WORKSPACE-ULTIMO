@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 
 <head>
@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stylemenu.css">
     <link rel="stylesheet" href="css/styles.css">
-    <title>Accesos Meintegral</title>
+    <title>Acceso a Herramientas Médicas</title>
     <style>
         .container {
             max-width: 1200px;
@@ -70,12 +70,12 @@
         }
 
         .educacion-aprendizaje {
-            background-color: #fff2cc;
+            background-color: #dfc5e6;
             /* Medium pastel lavender */
         }
 
         .gestion-inventarios {
-            background-color: #dfc5e6;
+            background-color: #fff2cc;
             /* Medium pastel yellow */
         }
     </style>
@@ -188,55 +188,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="category gestion-inventarios">
-                <h2>Herramientas de Consulta</h2>
-                <ul class="tool-list" id="document-list">
-                    <li>
-                        <a href="https://web.sispro.gov.co/WebPublico/Consultas/ConsultarDetalleReferenciaBasica.aspx?Code=CUPS"
-                            target="_blank">
-                            <div class="card">
-                                <img src="Img/cupsbuscador.png" alt="BUSCADOR DE CUPS">
-                                <div class="text"><br>BUSCADOR DE CUPS (ACTUALIZADO 2024)</div>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="http://www.ins.gov.co/buscador-eventos/Paginas/Fichas-y-Protocolos.aspx"
-                            target="_blank">
-                            <div class="card">
-                                <img src="Img/logosivigila.png" alt="FICHAS SIVIGILA">
-                                <div class="text">GESTIÓN Y VIGILANCIA<br>(FICHAS SIVIGILA)</div>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="http://meinbiotips.com/" target="_blank">
-                            <div class="card">
-                                <img src="Img/meinbiotips.png" alt="meinbiotips">
-                                <div class="text">MEINBIOTIPS<br>(USO DE ANTIBIÓTICOS)</div>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://pospopuli.minsalud.gov.co/PospopuliWeb/paginas/home.aspx#search1"
-                            target="_blank">
-                            <div class="card">
-                                <img src="Img/pospopuli.png" alt="meinbiotips">
-                                <div class="text">POSpopuli<br>(Búsqueda de Procedimientos y Medicamentos Financiados)
-                                </div>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://sites.google.com/view/calidad-nacional" target="_blank">
-                            <div class="card">
-                                <img src="Img/calidad-nacional.png" alt="herramienta de calidad nacional">
-                                <div class="text">Herramienta de Calidad Nacional<br></div>
-                            </div>
-                        </a>
-                    </li>
-                </ul>
-            </div>
+
             <div class="category educacion-aprendizaje">
                 <h2>Educación y Aprendizaje</h2>
                 <ul class="tool-list" id="document-list">
@@ -251,22 +203,29 @@
                 </ul>
             </div>
 
-
+            <div class="category gestion-inventarios">
+                <h2>Gestión de Inventarios</h2>
+                <ul class="tool-list" id="document-list">
+                    <li>
+                        <a href="https://web.sispro.gov.co/WebPublico/Consultas/ConsultarDetalleReferenciaBasica.aspx?Code=CUPS"
+                            target="_blank">
+                            <div class="card">
+                                <img src="Img/cupsbuscador.png" alt="BUSCADOR DE CUPS">
+                                <div class="text">HERRAMIENTA DE CONSULTA<br>BUSCADOR DE CUPS (ACTUALIZADO 2024)</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://www.ins.gov.co/buscador-eventos/Paginas/Fichas-y-Protocolos.aspx"
+                            target="_blank">
+                            <div class="card">
+                                <img src="Img/logosivigila.png" alt="FICHAS SIVIGILA">
+                                <div class="text">GESTIÓN Y VIGILANCIA<br>(FICHAS SIVIGILA)</div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </center>
     </main>
 </body>
-<footer>
-    <script>
-        fetch('footer.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('footer').innerHTML = data;
-            })
-            .catch(error => console.error('Error cargando el footer:', error));
-
-        window.onload = loadContent;
-    </script>
-    <div id="footer"></div>
-</footer>
-
-</html>
