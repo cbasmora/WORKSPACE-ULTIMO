@@ -103,10 +103,6 @@ header {background-color: rgb(204, 204, 204);
     margin-bottom: 0px;
     height: 100%;
     width: 100%;}
-.caja-bloqueda {
-    overflow: hidden;
-position: inherit;
-}
 h1  {margin: 0;}
 
 main {margin: 20px;}

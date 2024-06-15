@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <link rel="shortcut icon" href="ico/impresora.ico">
     <meta charset="UTF-8">
@@ -9,15 +10,16 @@
     <meta http-equiv="expires" content="0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-     integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
-     crossorigin="anonymous" referrerpolicy="no-referrer" />
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-     <link rel="stylesheet" href="css/StyleSection.css-sed.css">
+    <link rel="stylesheet" href="css/StyleSection.css-sed.css">
     <link rel="stylesheet" href="css/styles.css">
     <title>PACI | Indicadores</title>
     <script src="js/confirmacion.js" defer></script>
 </head>
-<body id="body2"> 
+
+<body id="body2">
     <script>
         function loadMenu() {
             fetch('menu.html')
@@ -29,135 +31,152 @@
         }
         window.onload = loadMenu;
     </script>
-        <div id="menu"></div>
+    <div id="menu"></div>
     <div id="caja-bloqueada">
         <header>
-            <img class="encabezado-fijo" src="img/Tittle-ih.png"/>
-        </header>     
+            <img class="encabezado-fijo" src="img/Tittle-ih.png" />
+        </header>
         <br>
-    </div>     
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-    <script src="js/confirmacion.js" ></script>
+    <script src="js/confirmacion.js"></script>
 
     <!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reporte de Ubicaciones</title>
-    <link rel="stylesheet" href="css/Stylesection.css">
-</head>
-<body>
-    <div class="divcategory">
-<br><br>
+    <html lang="es">
 
-<div class="category">
-    <h2 onclick="toggleLocations('formularios')">En construcción</h2>
-    <div id="formularios" class="locations">
-        <a href="" target="_blank" class="location" onclick="reportar('Formularios - Ubicación 1')">En construcción</a>
-        <a href="" target="_blank" class="location" onclick="reportar('Formularios - Ubicación 2')">En construcción</a>
-        <!-- Agrega más enlaces según tus necesidades -->
-    </div>
-</div>
-    <div class="category">
-        <h2 onclick="toggleLocations('cirugia_general')">En construcción</h2>
-        <div id="cirugia_general" class="locations">
-            <a href="" target="_blank" class="location" onclick="reportar('Cirugia General - Ubicación 1')">En construcción</a>
-            <a href="" target="_blank" class="location" onclick="reportar('Cirugia General - Ubicación 2')">En construcción</a>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Reporte de Ubicaciones</title>
+        <link rel="stylesheet" href="css/Stylesection.css">
+    </head>
 
-            <!-- Agrega más enlaces según tus necesidades -->
+    <body>
+        <div class="divcategory">
+            <br><br>
+
+            <div class="category">
+                <h2 onclick="toggleLocations('formularios')">En construcción</h2>
+                <div id="formularios" class="locations">
+                    <a href="" target="_blank" class="location" onclick="reportar('Formularios - Ubicación 1')">En
+                        construcción</a>
+                    <a href="" target="_blank" class="location" onclick="reportar('Formularios - Ubicación 2')">En
+                        construcción</a>
+                    <!-- Agrega más enlaces según tus necesidades -->
+                </div>
+            </div>
+            <div class="category">
+                <h2 onclick="toggleLocations('cirugia_general')">En construcción</h2>
+                <div id="cirugia_general" class="locations">
+                    <a href="" target="_blank" class="location" onclick="reportar('Cirugia General - Ubicación 1')">En
+                        construcción</a>
+                    <a href="" target="_blank" class="location" onclick="reportar('Cirugia General - Ubicación 2')">En
+                        construcción</a>
+
+                    <!-- Agrega más enlaces según tus necesidades -->
+                </div>
+            </div>
+
+            <div class="category">
+                <h2 onclick="toggleLocations('consulta_externa')">En construcción</h2>
+                <div id="consulta_externa" class="locations">
+                    <a href="" target="_blank" class="location" onclick="reportar('Consulta Externa - Ubicación 1')">En
+                        construcción</a>
+                    <a href="" target="_blank" class="location" onclick="reportar('Consulta Externa - Ubicación 2')">En
+                        construcción</a>
+                    <!-- Agrega más enlaces según tus necesidades -->
+                </div>
+            </div>
+
+            <div class="category">
+                <h2 onclick="toggleLocations('hospitalizacion_pediatrica')">En construcción</h2>
+                <div id="hospitalizacion_pediatrica" class="locations">
+                    <a href="" target="_blank" class="location"
+                        onclick="reportar('Hospitalización Pediátrica - Ubicación 1')">En construcción</a>
+                    <a href="" target="_blank" class="location"
+                        onclick="reportar('Hospitalización Pediátrica - Ubicación 2')">En construcción</a>
+                    <a href="" target="_blank" class="location"
+                        onclick="reportar('Hospitalización Pediátrica - Ubicación 3')">En construcción</a>
+                    <a href="" target="_blank" class="location"
+                        onclick="reportar('Hospitalización Pediátrica - Ubicación 4')">En construcción</a>
+
+
+                    <!-- Agrega más enlaces según tus necesidades -->
+                </div>
+            </div>
+
+            <div class="category">
+                <h2 onclick="toggleLocations('imagenes_diagnosticas')">En construcción</h2>
+                <div id="imagenes_diagnosticas" class="locations">
+                    <a href="" target="_blank" class="location"
+                        onclick="reportar('Imágenes Diagnósticas - Ubicación 1')">En construcción</a>
+                    <!-- Agrega más enlaces según tus necesidades -->
+                </div>
+            </div>
+
+            <div class="category">
+                <h2 onclick="toggleLocations('laboratorio_clinico')">En construcción</h2>
+                <div id="laboratorio_clinico" class="locations">
+                    <a href="" target="_blank" class="location"
+                        onclick="reportar('Laboratorio Clínico - Ubicación 1')">En construcción</a>
+                    <a href="" target="_blank" class="location"
+                        onclick="reportar('Imágenes Diagnósticas - Ubicación 2')">En construcción</a>
+                    <!-- Agrega más enlaces según tus necesidades -->
+                </div>
+            </div>
+
+
+
+
         </div>
-    </div>
 
-    <div class="category">
-        <h2 onclick="toggleLocations('consulta_externa')">En construcción</h2>
-        <div id="consulta_externa" class="locations">
-            <a href="" target="_blank" class="location" onclick="reportar('Consulta Externa - Ubicación 1')">En construcción</a>
-            <a href="" target="_blank" class="location" onclick="reportar('Consulta Externa - Ubicación 2')">En construcción</a>
-            <!-- Agrega más enlaces según tus necesidades -->
-        </div>
-    </div>
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const categories = document.querySelectorAll('.category');
 
-    <div class="category">
-        <h2 onclick="toggleLocations('hospitalizacion_pediatrica')">En construcción</h2>
-        <div id="hospitalizacion_pediatrica" class="locations">
-            <a href="" target="_blank" class="location" onclick="reportar('Hospitalización Pediátrica - Ubicación 1')">En construcción</a>
-            <a href="" target="_blank" class="location" onclick="reportar('Hospitalización Pediátrica - Ubicación 2')">En construcción</a>
-            <a href="" target="_blank" class="location" onclick="reportar('Hospitalización Pediátrica - Ubicación 3')">En construcción</a>
-            <a href="" target="_blank" class="location" onclick="reportar('Hospitalización Pediátrica - Ubicación 4')">En construcción</a>
+                categories.forEach(category => {
+                    const header = category.querySelector('h2');
+                    const locations = category.querySelector('.locations');
 
-
-            <!-- Agrega más enlaces según tus necesidades -->
-        </div>
-    </div>
-
-    <div class="category">
-        <h2 onclick="toggleLocations('imagenes_diagnosticas')">En construcción</h2>
-        <div id="imagenes_diagnosticas" class="locations">
-            <a href="" target="_blank" class="location" onclick="reportar('Imágenes Diagnósticas - Ubicación 1')">En construcción</a>
-            <!-- Agrega más enlaces según tus necesidades -->
-        </div>
-    </div>
-
-    <div class="category">
-        <h2 onclick="toggleLocations('laboratorio_clinico')">En construcción</h2>
-        <div id="laboratorio_clinico" class="locations">
-            <a href="" target="_blank" class="location" onclick="reportar('Laboratorio Clínico - Ubicación 1')">En construcción</a>
-            <a href="" target="_blank" class="location" onclick="reportar('Imágenes Diagnósticas - Ubicación 2')">En construcción</a>
-            <!-- Agrega más enlaces según tus necesidades -->
-        </div>
-    </div>
-
-
-
-
-</div>
-
-    <script>
-document.addEventListener('DOMContentLoaded', function() {
-    const categories = document.querySelectorAll('.category');
-
-    categories.forEach(category => {
-        const header = category.querySelector('h2');
-        const locations = category.querySelector('.locations');
-
-        header.addEventListener('click', function() {
-            category.classList.toggle('open');
-            locations.style.maxHeight = category.classList.contains('open') ? locations.scrollHeight + 'px' : '0';
-        });
-    });
-});
-    </script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const categories = document.querySelectorAll('.category2');
-        
-            categories.forEach(category => {
-                const header = category.querySelector('h2');
-                const locations = category.querySelector('.locations');
-        
-                header.addEventListener('click', function() {
-                    category.classList.toggle('open');
-                    locations.style.maxHeight = category.classList.contains('open') ? locations.scrollHeight + 'px' : '0';
+                    header.addEventListener('click', function () {
+                        category.classList.toggle('open');
+                        locations.style.maxHeight = category.classList.contains('open') ? locations.scrollHeight + 'px' : '0';
+                    });
                 });
             });
-        });
-            </script>
-</body>
-</html>
+        </script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const categories = document.querySelectorAll('.category2');
+
+                categories.forEach(category => {
+                    const header = category.querySelector('h2');
+                    const locations = category.querySelector('.locations');
+
+                    header.addEventListener('click', function () {
+                        category.classList.toggle('open');
+                        locations.style.maxHeight = category.classList.contains('open') ? locations.scrollHeight + 'px' : '0';
+                    });
+                });
+            });
+        </script>
+    </body>
+
+    </html>
 
 </body>
 <footer>
     <script>
-            fetch('footer.html')
-                .then(response => response.text())
-                .then(data => {
-                    document.getElementById('footer').innerHTML = data;
-                })
-                .catch(error => console.error('Error cargando el footer:', error));
-        
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer').innerHTML = data;
+            })
+            .catch(error => console.error('Error cargando el footer:', error));
+
         window.onload = loadContent;
     </script>
-        <div id="footer"></div>
+    <div id="footer"></div>
 </footer>
+
 </html>

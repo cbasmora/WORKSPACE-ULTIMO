@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <link rel="shortcut icon" href="ico/impresora.ico">
     <meta charset="UTF-8">
@@ -10,8 +11,8 @@
 
     <link rel="stylesheet" href="stylemenu.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/styles.css">
 
     <title>PACI | Reportes</title>
@@ -28,46 +29,61 @@
     }
     window.onload = loadMenu;
 </script>
-    <div id="menu"></div>
+<div id="menu"></div>
+
 <body>
-<div id="caja-bloqueada">
+    <div id="caja-bloqueada">
         <header>
-            <img class="encabezado-fijo" src="img/Tittle-4.png"/>
-        </header>     
-    </div> 
-<main>
+            <img class="encabezado-fijo" src="img/Tittle-4.png" />
+        </header>
+    </div>
+    <main>
         <center>
             <input type="text" id="search" placeholder="Buscar reportes...">
         </center>
-        <center><ul id="document-list">
-	        <li><span><a href="https://docs.google.com/forms/d/e/1FAIpQLSd4EtxNQCS_RW0rndwm3-q1PLNS6QKycOjP9_R-oXem7jALhg/viewform" target="_blank" data-description="CARDIOVASCULAR NEONATAL Y PEDIATRICA"><img src="img/infrastructuratp.png" alt="PDF icon">INFRAESTRUCTURA</a></li></span>
-	        <li><span><a href="https://docs.google.com/forms/d/e/1FAIpQLSfjxPhQuJYYKMHi-ZKljY8RoE27JGoDVyQnIzxPmXnAUtzAtg/viewform" target="_blank" data-description="FORMATO DIARIO DE REGISTRO DE PH"><img src="img/tecnologiatp.png" alt="PDF icon">FALLAS TECNOLÓGICAS</a></li></span>
- 	        <li><span><a href="https://docs.google.com/forms/d/e/1FAIpQLScSLDdGMwDOPqGNg8AJR8fzRDKWkcduj-TJOEgWLB8RadjqKg/viewform" target="_blank" data-description="Descripción del documento pendiente por actualizar"><img src="img/biomedictp.png" alt="PDF icon">ÁREA BIOMÉDICA</a></li></span>
-            <li><span><a href="https://docs.google.com/forms/d/e/1FAIpQLSc4hO6r7LmTyNUf8nk3fkq6Cv74zS5hq-_CP_k-UJIY8g_TpA/viewform" target="_blank" data-description="Descripción del documento pendiente por actualizar"><img src="img/indiciotp.png" alt="PDF icon">INDICIOS DE ATENCIÓN INSEGURA (Seguridad del paciente)</a></li></span>
-            <li><span><a href="https://forms.gle/j1JwJyxgRwcZ2Wje7" target="_blank" data-description="Descripción del documento pendiente por actualizar"><img src="img/sisotp.png" alt="PDF icon">INCIDENTES, ACTOS, CONDICIONES INSEGURAS (SST)</a></li></span>
+        <center>
+            <ul id="document-list">
+                <li><span><a href="https://docs.google.com/forms/d/e/1FAIpQLSd4EtxNQCS_RW0rndwm3-q1PLNS6QKycOjP9_R-oXem7jALhg/viewform"
+                            target="_blank" data-description="CARDIOVASCULAR NEONATAL Y PEDIATRICA"><img
+                                src="img/infrastructuratp.png" alt="PDF icon">INFRAESTRUCTURA</a></li></span>
+                <li><span><a href="https://docs.google.com/forms/d/e/1FAIpQLSfjxPhQuJYYKMHi-ZKljY8RoE27JGoDVyQnIzxPmXnAUtzAtg/viewform"
+                            target="_blank" data-description="FORMATO DIARIO DE REGISTRO DE PH"><img
+                                src="img/tecnologiatp.png" alt="PDF icon">FALLAS TECNOLÓGICAS</a></li></span>
+                <li><span><a href="https://docs.google.com/forms/d/e/1FAIpQLScSLDdGMwDOPqGNg8AJR8fzRDKWkcduj-TJOEgWLB8RadjqKg/viewform"
+                            target="_blank" data-description="Descripción del documento pendiente por actualizar"><img
+                                src="img/biomedictp.png" alt="PDF icon">ÁREA BIOMÉDICA</a></li></span>
+                <li><span><a href="https://docs.google.com/forms/d/e/1FAIpQLSc4hO6r7LmTyNUf8nk3fkq6Cv74zS5hq-_CP_k-UJIY8g_TpA/viewform"
+                            target="_blank" data-description="Descripción del documento pendiente por actualizar"><img
+                                src="img/indiciotp.png" alt="PDF icon">INDICIOS DE ATENCIÓN INSEGURA (Seguridad del
+                            paciente)</a></li></span>
+                <li><span><a href="https://forms.gle/j1JwJyxgRwcZ2Wje7" target="_blank"
+                            data-description="Descripción del documento pendiente por actualizar"><img
+                                src="img/sisotp.png" alt="PDF icon">INCIDENTES, ACTOS, CONDICIONES INSEGURAS (SST)</a>
+                </li></span>
 
 
 
 
-       
-            <!-- podemos agregar más PDF copiando el codigo anterior y cambiando la ruta donde se encuentra el PDF-->
-        </ul></center>
-    <!--<div id="description-box" class="hidden"></div> -->
-    <script src="js/search.js"></script>
-</main>
+
+                <!-- podemos agregar más PDF copiando el codigo anterior y cambiando la ruta donde se encuentra el PDF-->
+            </ul>
+        </center>
+        <!--<div id="description-box" class="hidden"></div> -->
+        <script src="js/search.js"></script>
+    </main>
 </body>
 <footer>
     <script>
-            fetch('footer.html')
-                .then(response => response.text())
-                .then(data => {
-                    document.getElementById('footer').innerHTML = data;
-                })
-                .catch(error => console.error('Error cargando el footer:', error));
-        
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer').innerHTML = data;
+            })
+            .catch(error => console.error('Error cargando el footer:', error));
+
         window.onload = loadContent;
     </script>
-        <div id="footer"></div>
+    <div id="footer"></div>
 </footer>
 
 </html>

@@ -1,5 +1,6 @@
 ﻿<!DOCTYPE html>
 <html lang="es">
+
 <head>
     <link rel="shortcut icon" href="ico/impresora.ico">
     <meta charset="UTF-8">
@@ -9,7 +10,9 @@
     <meta http-equiv="expires" content="0">
 
     <link rel="stylesheet" href="stylemenu.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/styles.css">
 
 
@@ -27,21 +30,26 @@
     }
     window.onload = loadMenu;
 </script>
-    <div id="menu"></div>
-<body> 
+<div id="menu"></div>
 
-<div id="caja-bloqueada">
+<body>
+
+    <div id="caja-bloqueada">
         <header>
-            <img class="encabezado-fijo" src="img/Tittle-Th.png"/>
-        </header>     
-    </div> 
-<main>
+            <img class="encabezado-fijo" src="img/Tittle-Th.png" />
+        </header>
+    </div>
+    <main>
 
         <center>
             <input type="text" id="search" placeholder="Buscar solicitud...">
         </center>
-        <center><ul id="document-list">
-	        <li><span><a href="https://docs.google.com/forms/d/e/1FAIpQLSeCdaBd34SsrP6LWcnTBW6TP4yrelbDJr7Uu6hR1O8GUpctCA/viewform" target="_blank" data-description="CARDIOVASCULAR NEONATAL Y PEDIATRICA"><img src="Img/thcertificados.png" alt="PDF icon">SOLICITUD DE CERTIFICADOS LABORALES</a></li></span>
+        <center>
+            <ul id="document-list">
+                <li><span><a href="https://docs.google.com/forms/d/e/1FAIpQLSeCdaBd34SsrP6LWcnTBW6TP4yrelbDJr7Uu6hR1O8GUpctCA/viewform"
+                            target="_blank" data-description="CARDIOVASCULAR NEONATAL Y PEDIATRICA"><img
+                                src="Img/thcertificados.png" alt="PDF icon">SOLICITUD DE CERTIFICADOS LABORALES</a></li>
+                </span>
 
 
 
@@ -49,22 +57,24 @@
 
 
 
-        </ul></center>
-    <!--<div id="description-box" class="hidden"></div> -->
-    <script src="js/search.js"></script>
-</main>
+            </ul>
+        </center>
+        <!--<div id="description-box" class="hidden"></div> -->
+        <script src="js/search.js"></script>
+    </main>
 </body>
 <footer>
     <script>
-            fetch('footer.html')
-                .then(response => response.text())
-                .then(data => {
-                    document.getElementById('footer').innerHTML = data;
-                })
-                .catch(error => console.error('Error cargando el footer:', error));
-        
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer').innerHTML = data;
+            })
+            .catch(error => console.error('Error cargando el footer:', error));
+
         window.onload = loadContent;
     </script>
-        <div id="footer"></div>
+    <div id="footer"></div>
 </footer>
+
 </html>
