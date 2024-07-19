@@ -1,7 +1,7 @@
 body {font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0;}
+    background-color: #e4e4e4;}
 input {
     background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
@@ -44,8 +44,11 @@ input {
     
 }
 .encabezado-fijo {
+    background-color: #333;
     height: 100%;
     width: 100%;
+    margin-bottom: 1px;
+    box-shadow: 0 5px #aaaaaa, 0 5px 10px rgba(0, 0, 0, 0.2);
 
 
 }
@@ -385,4 +388,35 @@ height: 100%;
   font-style: normal;
   font-weight: 300;
   src: local('Titillium WebLight'), local('TitilliumWeb-Light'), url(http://themes.googleusercontent.com/static/fonts/titilliumweb/v2/anMUvcNT0H1YN4FII8wpr24bNCNEoFTpS2BTjF6FB5E.woff) format('woff');
+}
+/* styles.css */
+
+/* Estilo para ocultar inicialmente la notificación */
+.hidden {
+    display: none;
+}
+
+/* Estilos para el contenedor de la notificación */
+.notification-container {
+    position: fixed;
+    bottom: 20px; /* Posición en la parte inferior */
+    right: 20px; /* Posición a la derecha */
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para el contenido de la notificación */
+.notification-content {
+    display: flex;
+    align-items: center;
+}
+
+/* Estilos para el botón de cerrar */
+.close-button {
+    cursor: pointer;
+    margin-left: auto; /* Alinear a la derecha dentro del contenedor */
+    font-size: 20px;
+    color: #888;
 }
