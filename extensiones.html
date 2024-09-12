@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <link rel="shortcut icon" href="ico/impresora.ico">
     <meta charset="UTF-8">
@@ -7,135 +8,37 @@
     <meta http-equiv="cache-control" content="no-store, no-cache, must-revalidate, max-age=0">
     <meta http-equiv="pragma" content="no-cache">
     <meta http-equiv="expires" content="0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="styles3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/styles.css">
 
     <title>PACI | Extensiones</title>
-    <script src="confirmacion.js" defer></script>
+    <script src="js/confirmacion.js" defer></script>
 </head>
+<script>
+    function loadMenu() {
+        fetch('menu.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('menu').innerHTML = data;
+            })
+            .catch(error => console.error('Error cargando el menú:', error));
+    }
+    window.onload = loadMenu;
+</script>
+<div id="menu"></div>
+
 <body>
-    <div class="menu">
-        <div class="area"></div><nav class="main-menu">
-            <ul>
-                <li>
-                    <a href="inicio.html">
-                        <i class="fa fa-home fa-2x"></i>
-                        <span class="nav-text">
-                           Inicio
-                        </span>
-                    </a>
-                  
-                </li>
-                <li class="has-subnav">
-                    <a href="accesos-meintegral.html">
-                        <i class="fa fa-solid fa-globe fa-2x"></i>
-                        <span class="nav-text">
-                            Accesos Meintegral
-                        </span>
-                    </a>
-                    
-                </li>
-                <li class="has-subnav">
-                    <a href="index.html">
-                        <i class="fa fa-solid fa-print fa-2x"></i>
-                        <span class="nav-text">
-                            Documentos Imprimibles
-                        </span>
-                    </a>
-                    
-                </li>
-                <li class="has-subnav">
-                    <a href="documentos-digitales.html">
-                        <i class="fa fa-solid fa-download fa-2x"></i>
-                        <span class="nav-text">
-                            Documentos Digitales
-                        </span>
-                    </a>
-                    
-                </li>
-            <li class="has-subnav">
-                <a href="videos.html">
-                    <i class="fa fa-solid fa-video fa-2x"></i>
-                    <span class="nav-text">
-                        Videos Institucionales
-                    </span>
-                </a>
-                
-            </li>
-                <li class="has-subnav">
-                    <a href="termohigrometros.html">
-                        <i class="fa fa-temperature-high fa-2x"></i>
-                        <span class="nav-text">
-                            Registro Termohigrometros
-                        </span>
-                    </a>
-                    
-                </li>
-                <li class="has-subnav">
-                    <a href="extensiones.html">
-                        <i class="fa fa-solid fa-phone fa-2x"></i>
-                        <span class="nav-text">
-                            Extensiones Telefónicas
-                        </span>
-                    </a>
-                   
-                </li>
-                <li>
-                    <a href="disponibilidad.html">
-                        <i class="fa fa-address-book fa-2x" aria-hidden="true"></i>
-                        <span class="nav-text">
-                            Disponibilidades
-                        </span>
-                    </a>
-                </li>
-                <li>
-                    <a href="indicadores.html">
-                        <i class="fa fa-solid fa-chart-line fa-2x"></i>
-                        <span class="nav-text">
-                           Indicadores de Calidad
-                        </span>
-                    </a>
-                </li>
 
-                <li>
-                   <a href="Talentohumano.html">
-                    <i class="fa fa-users fa-2x" aria-hidden="true"></i>
-                        <span class="nav-text">
-                            Talento Humano
-                        </span>
-                    </a>
-                </li>
-                <li>
-                    <a class="confirmarSalida" href="inventarios.html">
-                      <i class="fa fa-cogs fa-2x"></i>
-                       <span class="nav-text">
-                           Inventarios
-                       </span>
-                   </a>
-
-                  </li>  
-
-            </ul>
-
-            <ul class="logout">
-                <li>
-                    <a href="reportes.html">
-                        <i ID="triangle" class="fa fa-exclamation-triangle fa-2x" aria-hidden="true"></i>
-                          <span class="nav-text">
-                              Módulo de reportes
-                          </span>
-                      </a>
-                   </li>
-            </ul>
-        </nav>
-    </div>
     <div id="caja-bloqueada">
         <header>
-            <img class="encabezado-fijo" src="img/Tittle-3.png"/>
-        </header>     
+            <img class="encabezado-fijo" src="img/Tittle-3.png" />
+        </header>
         <br>
     </div>
-        <center><table>
+    <center>
+        <table>
             <tr>
                 <td class="column1">CODIGO AZUL</td>
                 <td class="column2">900</td>
@@ -155,7 +58,7 @@
             <tr>
                 <td class="column1">HOSPITALIZACION PISO 3</td>
                 <td class="column2">906</td>
-            </tr>            
+            </tr>
             <tr>
                 <td class="column1">HOSPITALIZACION PISO 4</td>
                 <td class="column2">904</td>
@@ -172,7 +75,7 @@
                 <td class="column1">LABORATORIO</td>
                 <td class="column2">909</td>
             </tr>
-                        <tr>
+            <tr>
                 <td class="column1">TALENTO HUMANO</td>
                 <td class="column2">910</td>
             </tr>
@@ -192,7 +95,7 @@
                 <td class="column1">FARMACIA</td>
                 <td class="column2">923</td>
             </tr>
-    
+
             <!-- Las demás filas siguen el mismo patrón -->
 
         </table>
@@ -228,17 +131,25 @@
 
             <!-- Las demás filas siguen el mismo patrón -->
 
-        </table></center>
+        </table>
+    </center>
 
     </div>
 </body>
 <br>
 <br>
 <footer>
-    <center>&copy; Meintegral S.A.S - Todos los derechos reservados <br>
-        Desarrollado por Jhon Sebastian Mora Agudelo<br>
-        Manizales - Caldas<br>
-        2023 - 2024
-        </center>
+    <script>
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer').innerHTML = data;
+            })
+            .catch(error => console.error('Error cargando el footer:', error));
+
+        window.onload = loadContent;
+    </script>
+    <div id="footer"></div>
 </footer>
+
 </html>

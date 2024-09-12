@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <link rel="shortcut icon" href="ico/impresora.ico">
     <meta charset="UTF-8">
@@ -8,195 +9,232 @@
     <meta http-equiv="expires" content="0">
     <link rel="stylesheet" href="stylemenu.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="styles3.css">
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/styles.css">
 
     <title>PACI | Videos</title>
-    <script src="confirmacion.js" defer></script>
+    <script src="js/confirmacion.js" defer></script>
 </head>
+<script>
+    function loadMenu() {
+        fetch('menu.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('menu').innerHTML = data;
+            })
+            .catch(error => console.error('Error cargando el menú:', error));
+    }
+    window.onload = loadMenu;
+</script>
+<div id="menu"></div>
+
 <body>
-    <div class="menu">
-        <div class="area"></div><nav class="main-menu">
-            <ul>
-                <li>
-                    <a href="inicio.html">
-                        <i class="fa fa-home fa-2x"></i>
-                        <span class="nav-text">
-                           Inicio
-                        </span>
-                    </a>
-                  
-                </li>
-                <li class="has-subnav">
-                    <a href="accesos-meintegral.html">
-                        <i class="fa fa-solid fa-globe fa-2x"></i>
-                        <span class="nav-text">
-                            Accesos Meintegral
-                        </span>
-                    </a>
-                    
-                </li>
-                <li class="has-subnav">
-                    <a href="index.html">
-                        <i class="fa fa-solid fa-print fa-2x"></i>
-                        <span class="nav-text">
-                            Documentos Imprimibles
-                        </span>
-                    </a>
-                    
-                </li>
-                                    <li class="has-subnav">
-                        <a href="documentos-digitales.html">
-                            <i class="fa fa-solid fa-download fa-2x"></i>
-                            <span class="nav-text">
-                                Documentos Digitales
-                            </span>
-                        </a>
-                        
-                    </li>
-            <li class="has-subnav">
-                <a href="videos.html">
-                    <i class="fa fa-solid fa-video fa-2x"></i>
-                    <span class="nav-text">
-                        Videos Institucionales
-                    </span>
-                </a>
-                
-            </li>
-                <li class="has-subnav">
-                    <a href="termohigrometros.html">
-                        <i class="fa fa-temperature-high fa-2x"></i>
-                        <span class="nav-text">
-                            Registro Termohigrometros
-                        </span>
-                    </a>
-                    
-                </li>
-                <li class="has-subnav">
-                    <a href="extensiones.html">
-                        <i class="fa fa-solid fa-phone fa-2x"></i>
-                        <span class="nav-text">
-                            Extensiones Telefónicas
-                        </span>
-                    </a>
-                   
-                </li>
-                <li>
-                    <a href="disponibilidad.html">
-                        <i class="fa fa-address-book fa-2x" aria-hidden="true"></i>
-                        <span class="nav-text">
-                            Disponibilidades
-                        </span>
-                    </a>
-                </li>
-                <li>
-                    <a href="indicadores.html">
-                        <i class="fa fa-solid fa-chart-line fa-2x"></i>
-                        <span class="nav-text">
-                           Indicadores de Calidad
-                        </span>
-                    </a>
-                </li>
 
-                <li>
-                   <a href="Talentohumano.html">
-                    <i class="fa fa-users fa-2x" aria-hidden="true"></i>
-                        <span class="nav-text">
-                            Talento Humano
-                        </span>
-                    </a>
-                </li>
-                <li>
-                    <a class="confirmarSalida" href="inventarios.html">
-                      <i class="fa fa-cogs fa-2x"></i>
-                       <span class="nav-text">
-                           Inventarios
-                       </span>
-                   </a>
-
-                  </li>  
-
-            </ul>
-
-            <ul class="logout">
-                <li>
-                    <a href="reportes.html">
-                        <i ID="triangle" class="fa fa-exclamation-triangle fa-2x" aria-hidden="true"></i>
-                          <span class="nav-text">
-                              Módulo de reportes
-                          </span>
-                      </a>
-                   </li>
-            </ul>
-        </nav>
-    </div>
-    </center>
-    </div>
     <div id="caja-bloqueada">
         <header>
-            <img class="encabezado-fijo" src="img/Tittle-2.png"/>
-        </header>     
-    </div> 
+            <img class="encabezado-fijo" src="img/Tittle-2.png" />
+        </header>
+    </div>
 
 
     <center><br>
-        <h2>VIDEO DESTACADO ⭐: Cargue de Imágenes Diagnosticas Go Telemedicina</h2><br>
-        <div><iframe class="video-destacado" width="80%" height="80%" src="https://www.youtube.com/embed/tjHwZednkoQ" title="GO Telemedicina" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <h1><b>TUTORIALES CITISALUD WEB</b></h1>
+    </center><br>
+    <H3>Por favor tenga en cuenta la siguiente información:</h3>
+    <p style="color: green;"> ● Ya no es necesario filtrar por fecha, ya que se ha completado el 100% de la migración.
+    </p>
+    <p> ● Los ordenamientos médicos ya no se deben realizar en Progressus; ahora se hacen directamente en la historia
+        clínica de Citisalud WEB. <em>(Tutorial VIDEO 2)</em></p>
+    <p> ● Es importante generar la orden de interconsulta y solicitarla adicionalmente a través del sistema.
+        <em>(Tutorial VÍDEO 3) </em>
+    </p>
+    <p> ● Es importante revisar el vídeo sobre Como realizar evolución de salida y plan de egreso de un paciente
+        en Citisalud Web <em>(Tutorial VÍDEO 7) </em></p>
+    <BR>
+
+    <center>
+        <!--<div><iframe class="video-destacado" width="80%" height="80%" src="https://www.youtube.com/embed/ymfU0-ak9ys" title="GO Telemedicina" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         <div> </center>
             <center><h6>______________________________________________</h6>
             <h4>Mas vídeos recomendados</h4></center>
-            <center>
+            <center> -->
+        <!--
         <table class="tabla-videos">
             <tr class="tr-videos">
                 <td class="td-videos">
-                    <div class="video-container">                   
-                        <iframe width="853" height="480" src="https://www.youtube.com/embed/M5biiyRhNYk" title="Clinica Meintegral S.A.S" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                        <p>Clinica Meintegral S.A.S</p>
+                    <div class="video-container">
+                        <iframe width="853" height="480" src="https://www.youtube.com/embed/APBVByPyyS0"
+                            title="Clinica Meintegral S.A.S" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                        <p>Como acceder al sistema | Citisalud WEB
+
+                        </p>
                     </div>
                 </td>
                 <td class="td-videos">
-                    <div class="video-container">                       
-                        <iframe width="853" height="480" src="https://www.youtube.com/embed/IvcHRLXTeeE" title="DESFIBRIADOR ZOLL M SERIES" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                        <p>Desfibrilador Zoll M Series</p>
+                    <div class="video-container">
+                        <iframe width="853" height="480" src="https://www.youtube.com/embed/T7As3WTMLx8"
+                            title="Oxigenoterapia en neonatos" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                        <p>Como realizar evoluciones y ordenes de procedimientos | Citisalud WEB
+                        </p>
                     </div>
                 </td>
                 <td class="td-videos">
-                    <div class="video-container">                        
-                        <iframe width="853" height="480" src="https://www.youtube.com/embed/XELotr4enG0" title="Protocolo de marcación y identificación de medicamentos de alto riesgo, Protocolo LASSA." frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                        <p>Protocolo LASSA</p>
+                    <div class="video-container">
+                        <iframe width="768" height="480" src="https://www.youtube.com/embed/WCejkGtzQRw"
+                            title="Guía de manejo de convulsiones neonatales" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                        <p>Solicitud de ordenamientos e interconsultas | Citisalud WEB
+                        </p>
                     </div>
                 </td>
+
             </tr>
             <tr class="tr-videos">
-                <td class="td-videos">                    
+                <td class="td-videos">
                     <div class="video-container">
-                        <iframe width="853" height="480" src="https://www.youtube.com/embed/FFZ0Hk6lmgE" title="Oxigenoterapia en neonatos" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                        <p>Oxigenoterapia en neonatos</p>
+                        <iframe width="853" height="480" src="https://www.youtube.com/embed/Y6JMntvjRn8"
+                            title="DESFIBRIADOR ZOLL M SERIES" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                        <p>Como dar respuesta a una interconsulta | Citisalud WEB
+                        </p>
                     </div>
                 </td>
-                <td class="td-videos">                    
+
+                <td class="td-videos">
                     <div class="video-container">
-                        <iframe width="768" height="480" src="https://www.youtube.com/embed/u_jPs7vHbRQ" title="Guía de manejo de convulsiones neonatales" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                        <p>Guía de manejo de convulsiones neonatales</p>
+                        <iframe width="768" height="480" src="https://www.youtube.com/embed/yJBWO-B_4Ec"
+                            title="Preparación y cuidados del paciente de Hemodinamia y cx Cardiovascular"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                        <p>Solicitud y Respuesta a interconsultas | Citisalud WEB
+                        </p>
                     </div>
                 </td>
-                <td class="td-videos">                     
+                <td class="td-videos">
                     <div class="video-container">
-                        <iframe width="768" height="480" src="https://www.youtube.com/embed/cg9iTLifRGU" title="Preparación y cuidados del paciente de Hemodinamia y cx Cardiovascular" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                        <p>Preparación y cuidados del paciente de Hemodinamia y cx Cardiovascular</p>
+                        <iframe width="853" height="480" src="https://www.youtube.com/embed/ivsL0Dy3JNg"
+                            title="Protocolo de marcación y identificación de medicamentos de alto riesgo, Protocolo LASSA."
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                        <p>Como crear notas de enfermeria | Citisalud WEB
+                        </p>
                     </div>
                 </td>
             </tr>
         </table>
-</div></center>
+        </div> -->
+        <table class="tabla-videos">
+
+            <tr class="tr-videos">
+                <td class="td-videos">
+                    <p><B>VIDEO 1:</B>Como acceder a Citisalud WEB:
+                    <p>
+                        <video controls width="600">
+                            <source src="Videos/Como-ingresar-a-citisalud-web.mp4" type="video/mp4">
+                        </video>
+                </td>
+                <td class="td-videos">
+                    <p><B>VIDEO 2:</B>Como realizar evoluciones y ordenes de procedimientos:
+                    <p>
+                        <video controls width="600">
+                            <source src="Videos/Como realizar evoluciones y ordenes de procedimientos.mp4"
+                                type="video/mp4">
+                        </video>
+                </td>
+            </tr>
+            <tr class="tr-videos">
+                <td class="td-videos">
+                    <p><B>VIDEO 3: </B>Como crear la orden de interconsulta y activarla en el módulo de interconsultas:
+                    <p>
+                        <video controls width="600">
+                            <source src="Videos/Solicitud y ordenamiento de interconsultas.mp4" type="video/mp4">
+                        </video>
+                </td>
+                <td class="td-videos">
+                    <p><B>VIDEO 4: </B>Como dar respuesta a una interconsulta:
+                    <p>
+                        <video controls width="600">
+                            <source src="Videos/como dar Respuesta a una interconsulta.mp4" type="video/mp4">
+                        </video>
+                </td>
+            </tr>
+            <tr class="tr-videos">
+                <td class="td-videos">
+                    <p><B>VIDEO 5:</B>Solicitud y Respuesta a interconsultas (Vídeo unificado):
+                    <p>
+                        <video controls width="600">
+                            <source src="Videos/Solicitud y Respuesta a interconsulta (unificado) comprimido.mp4"
+                                type="video/mp4">
+                        </video>
+                </td>
+                <td class="td-videos">
+                    <p><B>VIDEO 6:</B>Como crear notas de enfermería:
+                    <p>
+                        <video controls width="600">
+                            <source src="Videos/como-crear-notas-de-enfermeria.mp4" type="video/mp4">
+                        </video>
+                </td>
+            </tr>
+            <tr class="tr-videos">
+                <td class="td-videos">
+                    <p><B>VIDEO 7:</B>Como realizar evolución de salida y plan de egreso de un paciente
+                        en Citisalud Web:
+                    <p>
+                        <video controls width="600">
+                            <source
+                                src="Videos/como realizar Salida y plan de egreso de un paciente en Citisalud Web.mp4"
+                                type="video/mp4">
+                        </video>
+                </td>
+                <td class="td-videos">
+                    <p><B>VIDEO 8:</B>Como consultar la HC, sus anexos y generar la Epicrisis:
+                    <p>
+                        <video controls width="600">
+                            <source src="Videos/consulta-de-hc-y-epicrisis.mp4" type="video/mp4">
+                        </video>
+                </td>
+            </tr>
+        </table><br>
+    </center>
+    <H3>Capacitaciones completas:</h3>
+    <p> ● Capacitación Completa 1: <a href="https://www.youtube.com/watch?v=XIJmMu4WdNw"><em>CITISALUD - WEB HC TERAPIA
+                RESPIRATORIA, TERAPIA FÍSICA, FONOAUDILOGÍA, NUTRICIONISTA, PSICOLOGIA, ETC.</em></a></p>
+    <p> ● Capacitación Completa 2: <a
+            href="https://www.youtube.com/watch?v=Ad8Qf99A8a0&ab_channel=Conexi%C3%B3nyEducaci%C3%B3nunSoloCoraz%C3%B3n"><em>CITISALUD
+                - WEB HC CONSULTA DE HISTORÍA CLINICA ADMINISTRATIVO, FARMACIA, LABORATORIO, RADIOLOGIA, ETC.</em></a>
+    </p>
+    <p> ● Capacitación Completa 3: <a
+            href="https://www.youtube.com/watch?v=GVRY-McQviA&ab_channel=Conexi%C3%B3nyEducaci%C3%B3nunSoloCoraz%C3%B3n"><em>CITISALUD
+                - WEB HC ENFERMEROS Y AUXILIARES DE ENFERMERÍA</em></a></p>
+    <p> ● Capacitación Completa 4: <a
+            href="https://www.youtube.com/watch?v=ymfU0-ak9ys&ab_channel=Conexi%C3%B3nyEducaci%C3%B3nunSoloCoraz%C3%B3n"><em>CITISALUD
+                - WEB HC MÉDICOS GENERALES, PEDIATRAS, INTENSIVISTAS , ETC.</em></a></p>
+    <p> ● Capacitación Completa 5: <a
+            href="https://www.youtube.com/watch?v=fd3mDR-QgTM&ab_channel=Conexi%C3%B3nyEducaci%C3%B3nunSoloCoraz%C3%B3n"><em>CITISALUD
+                - WEB HC MÉDICOS GENERALES, PEDIATRAS, INTENSIVISTAS , ETC. (SEGUNDA CAPACITACIÓN).</em></a></p>
 </body>
 <br><br>
 <footer>
-    <center>&copy; Meintegral S.A.S - Todos los derechos reservados <br>
-        Desarrollado por Jhon Sebastian Mora Agudelo<br>
-        Manizales - Caldas<br>
-        2023
-        </center>
+    <script>
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer').innerHTML = data;
+            })
+            .catch(error => console.error('Error cargando el footer:', error));
+
+        window.onload = loadContent;
+    </script>
+    <div id="footer"></div>
 </footer>
+
 </html>
