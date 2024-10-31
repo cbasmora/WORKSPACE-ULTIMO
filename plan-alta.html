@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <link rel="shortcut icon" href="ico/impresora.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="cache-control" content="no-store, no-cache, must-revalidate, max-age=0">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="expires" content="0">
+
+    <link rel="stylesheet" href="stylemenu.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>PACI | Plan de Alta</title>
+    <script src="js/confirmacion.js" defer></script>
+</head>
+<script>
+    function loadMenu() {
+        fetch('menu.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('menu').innerHTML = data;
+            })
+            .catch(error => console.error('Error cargando el menú:', error));
+    }
+    window.onload = loadMenu;
+</script>
+<div id="menu"></div>
+
+<body>
+
+    <div id="caja-bloqueada">
+        <header>
+            <!--<img class="encabezado-fijo" src="img/Tittle.png" />-->
+            <img class="encabezado-fijo" src="img/plandealta.png" />
+        </header>
+    </div>
+    
+    <main class="container">
+        <center>
+            <div class="category gestion-medica">
+                <h2></h2>
+                <ul class="tool-list" id="document-list">
+                    <li>
+                        <a href="http://192.168.1.250:8080/formula_medica_ambulatorio/" target="_blank" style="background-color: rgb(173, 171, 255);">
+                            <div class="card">
+                                <img src="Img/logo_devolucion.png" alt="solicitud_insumos">
+                                <div class="text"><b>ORDENAR MÉDICAMENTOS</b><br><em>Documento Ambulatorio</em></div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://192.168.1.250:8080/solicitud_insumos_ambulatorio/" target="_blank" style="background-color: rgb(255, 233, 109);">
+                            <div class="card">
+                                <img src="Img/insumoslogo.png" alt="solicitud_insumos">
+                                <div class="text"><b>ORDENAR INSUMOS</b><br><em>Documento Ambulatorio</em></div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+
+
+        </center>
+    </main>
+        </center>
+        <!--<div id="description-box" class="hidden"></div> -->
+        <script src="js/search.js"></script>
+    </main>
+</body>
+<footer>
+    <script>
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer').innerHTML = data;
+            })
+            .catch(error => console.error('Error cargando el footer:', error));
+
+        window.onload = loadContent;
+    </script>
+    <div id="footer"></div>
+</footer>
+
+</html>
